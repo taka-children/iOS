@@ -19,8 +19,9 @@ class ChatViewController: UIViewController {
         navigationItem.title = "チャット"
         let nib = UINib(nibName: "ChatTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "chatCell")
+        tableView.allowsSelection = false
+        tableView.separatorStyle = .none
         self.view.addSubview(tableView)
-        tableView.delegate = self
         tableView.dataSource = self
     }
     
@@ -48,12 +49,5 @@ extension ChatViewController: UITableViewDataSource {
         cell.nameLabel.text = "ともき"
         cell.messageLabel.text = "ほげほげほげおｈごえ"
         return cell
-    }
-}
-
-extension ChatViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        print(indexPath.row)
     }
 }
