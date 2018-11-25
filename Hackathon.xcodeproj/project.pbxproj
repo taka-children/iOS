@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6A3ECC21AAA09300D22D7D /* ChatStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3ECB21AAA09300D22D7D /* ChatStoryboard.storyboard */; };
+		AD6A3ECF21AAA11700D22D7D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3ECE21AAA11700D22D7D /* ChatViewController.swift */; };
+		AD6A3ED321AAA1B000D22D7D /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3ED121AAA1B000D22D7D /* ChatTableViewCell.swift */; };
+		AD6A3ED421AAA1B000D22D7D /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3ED221AAA1B000D22D7D /* ChatTableViewCell.xib */; };
 		B725462921AA952200FE48E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725462821AA952200FE48E7 /* AppDelegate.swift */; };
 		B725462B21AA952200FE48E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725462A21AA952200FE48E7 /* ViewController.swift */; };
 		B725462E21AA952200FE48E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B725462C21AA952200FE48E7 /* Main.storyboard */; };
 		B725463021AA952300FE48E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B725462F21AA952300FE48E7 /* Assets.xcassets */; };
 		B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B725463121AA952300FE48E7 /* LaunchScreen.storyboard */; };
-		B725464621AA98B700FE48E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464121AA98B700FE48E7 /* Alamofire.framework */; };
-		B725464721AA98B700FE48E7 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464221AA98B700FE48E7 /* SnapKit.framework */; };
-		B725464821AA98B700FE48E7 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464321AA98B700FE48E7 /* SwiftyUserDefaults.framework */; };
-		B725464921AA98B700FE48E7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464421AA98B700FE48E7 /* RxSwift.framework */; };
-		B725464A21AA98B700FE48E7 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464521AA98B700FE48E7 /* SDWebImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD6A3ECB21AAA09300D22D7D /* ChatStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatStoryboard.storyboard; sourceTree = "<group>"; };
+		AD6A3ECE21AAA11700D22D7D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		AD6A3ED121AAA1B000D22D7D /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		AD6A3ED221AAA1B000D22D7D /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		B725462521AA952200FE48E7 /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B725462821AA952200FE48E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B725462A21AA952200FE48E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,17 +42,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B725464621AA98B700FE48E7 /* Alamofire.framework in Frameworks */,
-				B725464721AA98B700FE48E7 /* SnapKit.framework in Frameworks */,
-				B725464821AA98B700FE48E7 /* SwiftyUserDefaults.framework in Frameworks */,
-				B725464921AA98B700FE48E7 /* RxSwift.framework in Frameworks */,
-				B725464A21AA98B700FE48E7 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD6A3ECA21AAA06800D22D7D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A3ECB21AAA09300D22D7D /* ChatStoryboard.storyboard */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		AD6A3ECD21AAA0F700D22D7D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A3ED021AAA18500D22D7D /* Chat cell */,
+				AD6A3ECE21AAA11700D22D7D /* ChatViewController.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		AD6A3ED021AAA18500D22D7D /* Chat cell */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A3ED121AAA1B000D22D7D /* ChatTableViewCell.swift */,
+				AD6A3ED221AAA1B000D22D7D /* ChatTableViewCell.xib */,
+			);
+			name = "Chat cell";
+			sourceTree = "<group>";
+		};
 		B725461C21AA952100FE48E7 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +115,7 @@
 		B725463B21AA957800FE48E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD6A3ECD21AAA0F700D22D7D /* Chat */,
 				B725463F21AA959E00FE48E7 /* Main */,
 				B725462821AA952200FE48E7 /* AppDelegate.swift */,
 				B725462A21AA952200FE48E7 /* ViewController.swift */,
@@ -108,6 +133,7 @@
 		B725463D21AA958100FE48E7 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				AD6A3ECA21AAA06800D22D7D /* Chat */,
 				B725463E21AA959200FE48E7 /* Main */,
 				B725462C21AA952200FE48E7 /* Main.storyboard */,
 			);
@@ -200,6 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */,
+				AD6A3ECC21AAA09300D22D7D /* ChatStoryboard.storyboard in Resources */,
+				AD6A3ED421AAA1B000D22D7D /* ChatTableViewCell.xib in Resources */,
 				B725463021AA952300FE48E7 /* Assets.xcassets in Resources */,
 				B725462E21AA952200FE48E7 /* Main.storyboard in Resources */,
 			);
@@ -216,8 +244,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SDWebImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/XLPagerTabStrip.framework",
@@ -239,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B725462B21AA952200FE48E7 /* ViewController.swift in Sources */,
+				AD6A3ED321AAA1B000D22D7D /* ChatTableViewCell.swift in Sources */,
+				AD6A3ECF21AAA11700D22D7D /* ChatViewController.swift in Sources */,
 				B725462921AA952200FE48E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
