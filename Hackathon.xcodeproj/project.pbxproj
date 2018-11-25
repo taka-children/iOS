@@ -15,6 +15,10 @@
 		AD6A3ECF21AAA11700D22D7D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3ECE21AAA11700D22D7D /* ChatViewController.swift */; };
 		AD6A3ED321AAA1B000D22D7D /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3ED121AAA1B000D22D7D /* ChatTableViewCell.swift */; };
 		AD6A3ED421AAA1B000D22D7D /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3ED221AAA1B000D22D7D /* ChatTableViewCell.xib */; };
+		AD6A3ED621AB0EE000D22D7D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3ED521AB0EE000D22D7D /* ProfileViewController.swift */; };
+		AD6A3ED821AB18E400D22D7D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3ED721AB18E400D22D7D /* Profile.storyboard */; };
+		AD6A3EDB21AB256F00D22D7D /* Ofice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3EDA21AB256F00D22D7D /* Ofice.storyboard */; };
+		AD6A3EDE21AB340200D22D7D /* OficeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3EDD21AB340200D22D7D /* OficeViewController.swift */; };
 		B725462921AA952200FE48E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725462821AA952200FE48E7 /* AppDelegate.swift */; };
 		B725462B21AA952200FE48E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725462A21AA952200FE48E7 /* ViewController.swift */; };
 		B725462E21AA952200FE48E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B725462C21AA952200FE48E7 /* Main.storyboard */; };
@@ -52,6 +56,10 @@
 		AD6A3ECE21AAA11700D22D7D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		AD6A3ED121AAA1B000D22D7D /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		AD6A3ED221AAA1B000D22D7D /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		AD6A3ED521AB0EE000D22D7D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AD6A3ED721AB18E400D22D7D /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		AD6A3EDA21AB256F00D22D7D /* Ofice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ofice.storyboard; sourceTree = "<group>"; };
+		AD6A3EDD21AB340200D22D7D /* OficeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficeViewController.swift; sourceTree = "<group>"; };
 		B725462521AA952200FE48E7 /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B725462821AA952200FE48E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B725462A21AA952200FE48E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +113,7 @@
 			children = (
 				A59C3ED121AAC2FB00C957B1 /* Login.storyboard */,
 				A59C3ED221AAC2FB00C957B1 /* register.storyboard */,
+				AD6A3ED721AB18E400D22D7D /* Profile.storyboard */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -114,6 +123,7 @@
 			children = (
 				A59C3ECF21AAC2D200C957B1 /* LoginViewController.swift */,
 				A59C3ECD21AAC2AF00C957B1 /* RegisterViewController.swift */,
+				AD6A3ED521AB0EE000D22D7D /* ProfileViewController.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -144,6 +154,22 @@
 				AD6A3ED221AAA1B000D22D7D /* ChatTableViewCell.xib */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		AD6A3ED921AB255500D22D7D /* Ofice */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A3EDA21AB256F00D22D7D /* Ofice.storyboard */,
+			);
+			path = Ofice;
+			sourceTree = "<group>";
+		};
+		AD6A3EDC21AB33EA00D22D7D /* Ofice */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A3EDD21AB340200D22D7D /* OficeViewController.swift */,
+			);
+			name = Ofice;
 			sourceTree = "<group>";
 		};
 		B725461C21AA952100FE48E7 = {
@@ -192,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				B7D3F4B521AAF31700BFDEB6 /* User */,
+				AD6A3EDC21AB33EA00D22D7D /* Ofice */,
 				B7D3F4AD21AAEB9B00BFDEB6 /* Consultation */,
 				B7F3C87721AAD4F500A64BAE /* Home */,
 				A59C3EC821AAC27300C957B1 /* OAuth */,
@@ -218,6 +245,7 @@
 				B7D3F4B621AAF31C00BFDEB6 /* User */,
 				B7D3F4B221AAEBCB00BFDEB6 /* Consultation */,
 				B7F3C87C21AAD56400A64BAE /* Home */,
+				AD6A3ED921AB255500D22D7D /* Ofice */,
 				A59C3EC721AAC26B00C957B1 /* OAuth */,
 				AD6A3ECA21AAA06800D22D7D /* Chat */,
 				B725463E21AA959200FE48E7 /* Main */,
@@ -375,6 +403,8 @@
 				B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */,
 				B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */,
 				AD6A3ECC21AAA09300D22D7D /* Chat.storyboard in Resources */,
+				AD6A3EDB21AB256F00D22D7D /* Ofice.storyboard in Resources */,
+				AD6A3ED821AB18E400D22D7D /* Profile.storyboard in Resources */,
 				B7D3F4B821AAF32200BFDEB6 /* User.storyboard in Resources */,
 				A59C3ED321AAC2FB00C957B1 /* Login.storyboard in Resources */,
 				AD6A3ED421AAA1B000D22D7D /* ChatTableViewCell.xib in Resources */,
@@ -425,6 +455,7 @@
 				B7D3F4B121AAEBC000BFDEB6 /* ConsultationTableViewCell.swift in Sources */,
 				A59C3ECE21AAC2AF00C957B1 /* RegisterViewController.swift in Sources */,
 				B7F3C87B21AAD4FF00A64BAE /* TabBarController.swift in Sources */,
+				AD6A3ED621AB0EE000D22D7D /* ProfileViewController.swift in Sources */,
 				B7D3F4BC21AAF62A00BFDEB6 /* UserView.swift in Sources */,
 				B7D3F4BA21AAF33000BFDEB6 /* UserViewController.swift in Sources */,
 				B7D3F4AF21AAEBB300BFDEB6 /* ConsultationViewController.swift in Sources */,
@@ -432,6 +463,7 @@
 				AD6A3ED321AAA1B000D22D7D /* ChatTableViewCell.swift in Sources */,
 				AD6A3ECF21AAA11700D22D7D /* ChatViewController.swift in Sources */,
 				B7F3C87621AAD4E100A64BAE /* StoryBoard.swift in Sources */,
+				AD6A3EDE21AB340200D22D7D /* OficeViewController.swift in Sources */,
 				B7D3F4BF21AAF7DB00BFDEB6 /* height.swift in Sources */,
 				B725462921AA952200FE48E7 /* AppDelegate.swift in Sources */,
 			);
