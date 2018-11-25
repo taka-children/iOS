@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A59C3ECE21AAC2AF00C957B1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C3ECD21AAC2AF00C957B1 /* RegisterViewController.swift */; };
+		A59C3ED021AAC2D200C957B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59C3ECF21AAC2D200C957B1 /* LoginViewController.swift */; };
+		A59C3ED321AAC2FB00C957B1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59C3ED121AAC2FB00C957B1 /* Login.storyboard */; };
+		A59C3ED421AAC2FB00C957B1 /* register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59C3ED221AAC2FB00C957B1 /* register.storyboard */; };
 		AD6A3ECC21AAA09300D22D7D /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3ECB21AAA09300D22D7D /* Chat.storyboard */; };
 		AD6A3ECF21AAA11700D22D7D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3ECE21AAA11700D22D7D /* ChatViewController.swift */; };
 		AD6A3ED321AAA1B000D22D7D /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3ED121AAA1B000D22D7D /* ChatTableViewCell.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A59C3ECD21AAC2AF00C957B1 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A59C3ECF21AAC2D200C957B1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A59C3ED121AAC2FB00C957B1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A59C3ED221AAC2FB00C957B1 /* register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = register.storyboard; sourceTree = "<group>"; };
 		AD6A3ECB21AAA09300D22D7D /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 		AD6A3ECE21AAA11700D22D7D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		AD6A3ED121AAA1B000D22D7D /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
@@ -48,6 +56,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A59C3EC721AAC26B00C957B1 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				A59C3ED121AAC2FB00C957B1 /* Login.storyboard */,
+				A59C3ED221AAC2FB00C957B1 /* register.storyboard */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		A59C3EC821AAC27300C957B1 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				A59C3ECF21AAC2D200C957B1 /* LoginViewController.swift */,
+				A59C3ECD21AAC2AF00C957B1 /* RegisterViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 		AD6A3ECA21AAA06800D22D7D /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +141,7 @@
 		B725463B21AA957800FE48E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A59C3EC821AAC27300C957B1 /* OAuth */,
 				AD6A3ECD21AAA0F700D22D7D /* Chat */,
 				B725463F21AA959E00FE48E7 /* Main */,
 				B725462821AA952200FE48E7 /* AppDelegate.swift */,
@@ -133,6 +160,7 @@
 		B725463D21AA958100FE48E7 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				A59C3EC721AAC26B00C957B1 /* OAuth */,
 				AD6A3ECA21AAA06800D22D7D /* Chat */,
 				B725463E21AA959200FE48E7 /* Main */,
 				B725462C21AA952200FE48E7 /* Main.storyboard */,
@@ -225,8 +253,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59C3ED421AAC2FB00C957B1 /* register.storyboard in Resources */,
 				B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */,
 				AD6A3ECC21AAA09300D22D7D /* Chat.storyboard in Resources */,
+				A59C3ED321AAC2FB00C957B1 /* Login.storyboard in Resources */,
 				AD6A3ED421AAA1B000D22D7D /* ChatTableViewCell.xib in Resources */,
 				B725463021AA952300FE48E7 /* Assets.xcassets in Resources */,
 				B725462E21AA952200FE48E7 /* Main.storyboard in Resources */,
@@ -266,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59C3ED021AAC2D200C957B1 /* LoginViewController.swift in Sources */,
 				B725462B21AA952200FE48E7 /* ViewController.swift in Sources */,
+				A59C3ECE21AAC2AF00C957B1 /* RegisterViewController.swift in Sources */,
 				AD6A3ED321AAA1B000D22D7D /* ChatTableViewCell.swift in Sources */,
 				AD6A3ECF21AAA11700D22D7D /* ChatViewController.swift in Sources */,
 				B725462921AA952200FE48E7 /* AppDelegate.swift in Sources */,
