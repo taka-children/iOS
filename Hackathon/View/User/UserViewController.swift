@@ -17,6 +17,7 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "プロフィール"
         profileView.frame = CGRect(x: 0, y: height.topHeight, width: view.frame.width, height: height.spaceHeight)
         profileView.setUp()
         self.view.addSubview(profileView)
