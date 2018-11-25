@@ -37,6 +37,7 @@ class OficeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func playButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "toGoogleForm", sender: nil)
     }
     
 }
