@@ -21,10 +21,21 @@
                         <viewLayoutGuide key="safeArea" id="gf4-zW-zmV"/>
                     </view>
                     <navigationItem key="navigationItem" id="U8O-X7-cX6"/>
+                    <connections>
+                        <segue destination="In2-2q-gXE" kind="show" identifier="toChat" id="GJF-De-oCX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XM8-H5-cNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1180" y="-161.46926536731635"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="BdF-o6-CI2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="In2-2q-gXE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dzb-eD-ZpZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1975" y="-174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gcn-6b-v7A">

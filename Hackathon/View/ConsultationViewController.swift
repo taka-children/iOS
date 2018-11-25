@@ -41,6 +41,6 @@ extension ConsultationViewController: UITableViewDataSource {
 extension ConsultationViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print(indexPath.row)
+        performSegue(withIdentifier: "toChat", sender: nil)
     }
 }
