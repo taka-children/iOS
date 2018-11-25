@@ -24,6 +24,16 @@
 		B725462E21AA952200FE48E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B725462C21AA952200FE48E7 /* Main.storyboard */; };
 		B725463021AA952300FE48E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B725462F21AA952300FE48E7 /* Assets.xcassets */; };
 		B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B725463121AA952300FE48E7 /* LaunchScreen.storyboard */; };
+		B738A0CA21AB384600644C26 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0C921AB384600644C26 /* FinancialViewController.swift */; };
+		B738A0CC21AB384E00644C26 /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0CB21AB384E00644C26 /* Financial.storyboard */; };
+		B738A0CE21AB3A1500644C26 /* CareerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0CD21AB3A1500644C26 /* CareerViewController.swift */; };
+		B738A0D021AB3A4300644C26 /* Career.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0CF21AB3A4300644C26 /* Career.storyboard */; };
+		B738A0D221AB3B6700644C26 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0D121AB3B6700644C26 /* SocialViewController.swift */; };
+		B738A0D421AB3B8E00644C26 /* Social.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0D321AB3B8E00644C26 /* Social.storyboard */; };
+		B738A0D621AB3BFF00644C26 /* TechnologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0D521AB3BFF00644C26 /* TechnologyViewController.swift */; };
+		B738A0D821AB3C0400644C26 /* Technology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0D721AB3C0400644C26 /* Technology.storyboard */; };
+		B738A0DA21AB3C7B00644C26 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0D921AB3C7B00644C26 /* BusinessViewController.swift */; };
+		B738A0DC21AB3CA300644C26 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0DB21AB3CA300644C26 /* Business.storyboard */; };
 		B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B798515C21AAD5C10089D1E8 /* TabBar.storyboard */; };
 		B798515F21AAD82F0089D1E8 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798515E21AAD82F0089D1E8 /* AppColor.swift */; };
 		B798516021AAD8B90089D1E8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464121AA98B700FE48E7 /* Alamofire.framework */; };
@@ -32,6 +42,9 @@
 		B798516321AAD8B90089D1E8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464221AA98B700FE48E7 /* SnapKit.framework */; };
 		B798516421AAD8B90089D1E8 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464321AA98B700FE48E7 /* SwiftyUserDefaults.framework */; };
 		B798516721AAD8BA0089D1E8 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */; };
+		B7B8DF6221AB35B7005071B4 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */; };
+		B7B8DF6421AB35C9005071B4 /* Internet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B8DF6321AB35C9005071B4 /* Internet.storyboard */; };
+		B7B8DF6721AB3738005071B4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8DF6621AB3738005071B4 /* HomeTableViewCell.swift */; };
 		B7D3F4AA21AAE58200BFDEB6 /* AttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4A921AAE58200BFDEB6 /* AttributeViewController.swift */; };
 		B7D3F4AC21AAE58E00BFDEB6 /* Attribute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D3F4AB21AAE58E00BFDEB6 /* Attribute.storyboard */; };
 		B7D3F4AF21AAEBB300BFDEB6 /* ConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4AE21AAEBB300BFDEB6 /* ConsultationViewController.swift */; };
@@ -72,10 +85,23 @@
 		B725464321AA98B700FE48E7 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
 		B725464421AA98B700FE48E7 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		B725464521AA98B700FE48E7 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
+		B738A0C921AB384600644C26 /* FinancialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
+		B738A0CB21AB384E00644C26 /* Financial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Financial.storyboard; sourceTree = "<group>"; };
+		B738A0CD21AB3A1500644C26 /* CareerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerViewController.swift; sourceTree = "<group>"; };
+		B738A0CF21AB3A4300644C26 /* Career.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Career.storyboard; sourceTree = "<group>"; };
+		B738A0D121AB3B6700644C26 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		B738A0D321AB3B8E00644C26 /* Social.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Social.storyboard; sourceTree = "<group>"; };
+		B738A0D521AB3BFF00644C26 /* TechnologyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnologyViewController.swift; sourceTree = "<group>"; };
+		B738A0D721AB3C0400644C26 /* Technology.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Technology.storyboard; sourceTree = "<group>"; };
+		B738A0D921AB3C7B00644C26 /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
+		B738A0DB21AB3CA300644C26 /* Business.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
 		B798515C21AAD5C10089D1E8 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		B798515E21AAD82F0089D1E8 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
 		B798516621AAD8BA0089D1E8 /* SlackTextViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlackTextViewController.framework; path = Carthage/Build/iOS/SlackTextViewController.framework; sourceTree = "<group>"; };
+		B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		B7B8DF6321AB35C9005071B4 /* Internet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Internet.storyboard; sourceTree = "<group>"; };
+		B7B8DF6621AB3738005071B4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		B7D3F4A921AAE58200BFDEB6 /* AttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeViewController.swift; sourceTree = "<group>"; };
 		B7D3F4AB21AAE58E00BFDEB6 /* Attribute.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Attribute.storyboard; sourceTree = "<group>"; };
 		B7D3F4AE21AAEBB300BFDEB6 /* ConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +307,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B7B8DF6521AB3725005071B4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7B8DF6621AB3738005071B4 /* HomeTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		B7D3F4AD21AAEB9B00BFDEB6 /* Consultation */ = {
 			isa = PBXGroup;
 			children = (
@@ -327,6 +361,13 @@
 			isa = PBXGroup;
 			children = (
 				B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */,
+				B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */,
+				B738A0C921AB384600644C26 /* FinancialViewController.swift */,
+				B738A0CD21AB3A1500644C26 /* CareerViewController.swift */,
+				B738A0D121AB3B6700644C26 /* SocialViewController.swift */,
+				B738A0D521AB3BFF00644C26 /* TechnologyViewController.swift */,
+				B738A0D921AB3C7B00644C26 /* BusinessViewController.swift */,
+				B7B8DF6521AB3725005071B4 /* Cell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -335,6 +376,12 @@
 			isa = PBXGroup;
 			children = (
 				B7F3C87D21AAD56400A64BAE /* Home.storyboard */,
+				B7B8DF6321AB35C9005071B4 /* Internet.storyboard */,
+				B738A0CB21AB384E00644C26 /* Financial.storyboard */,
+				B738A0CF21AB3A4300644C26 /* Career.storyboard */,
+				B738A0D321AB3B8E00644C26 /* Social.storyboard */,
+				B738A0D721AB3C0400644C26 /* Technology.storyboard */,
+				B738A0DB21AB3CA300644C26 /* Business.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -398,10 +445,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B738A0D021AB3A4300644C26 /* Career.storyboard in Resources */,
 				B7D3F4B421AAEBD800BFDEB6 /* Consultation.storyboard in Resources */,
 				A59C3ED421AAC2FB00C957B1 /* register.storyboard in Resources */,
+				B738A0D421AB3B8E00644C26 /* Social.storyboard in Resources */,
+				B738A0DC21AB3CA300644C26 /* Business.storyboard in Resources */,
+				B738A0D821AB3C0400644C26 /* Technology.storyboard in Resources */,
 				B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */,
 				B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */,
+				B738A0CC21AB384E00644C26 /* Financial.storyboard in Resources */,
 				AD6A3ECC21AAA09300D22D7D /* Chat.storyboard in Resources */,
 				AD6A3EDB21AB256F00D22D7D /* Ofice.storyboard in Resources */,
 				AD6A3ED821AB18E400D22D7D /* Profile.storyboard in Resources */,
@@ -449,16 +501,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A59C3ED021AAC2D200C957B1 /* LoginViewController.swift in Sources */,
+				B738A0DA21AB3C7B00644C26 /* BusinessViewController.swift in Sources */,
+				B7B8DF6221AB35B7005071B4 /* InternetViewController.swift in Sources */,
+				B738A0CE21AB3A1500644C26 /* CareerViewController.swift in Sources */,
 				B798515F21AAD82F0089D1E8 /* AppColor.swift in Sources */,
 				B725462B21AA952200FE48E7 /* ViewController.swift in Sources */,
 				B7D3F4AA21AAE58200BFDEB6 /* AttributeViewController.swift in Sources */,
+				B738A0D621AB3BFF00644C26 /* TechnologyViewController.swift in Sources */,
 				B7D3F4B121AAEBC000BFDEB6 /* ConsultationTableViewCell.swift in Sources */,
+				B7B8DF6721AB3738005071B4 /* HomeTableViewCell.swift in Sources */,
 				A59C3ECE21AAC2AF00C957B1 /* RegisterViewController.swift in Sources */,
+				B738A0D221AB3B6700644C26 /* SocialViewController.swift in Sources */,
 				B7F3C87B21AAD4FF00A64BAE /* TabBarController.swift in Sources */,
 				AD6A3ED621AB0EE000D22D7D /* ProfileViewController.swift in Sources */,
 				B7D3F4BC21AAF62A00BFDEB6 /* UserView.swift in Sources */,
 				B7D3F4BA21AAF33000BFDEB6 /* UserViewController.swift in Sources */,
 				B7D3F4AF21AAEBB300BFDEB6 /* ConsultationViewController.swift in Sources */,
+				B738A0CA21AB384600644C26 /* FinancialViewController.swift in Sources */,
 				B7F3C87921AAD4F500A64BAE /* HomeViewController.swift in Sources */,
 				AD6A3ED321AAA1B000D22D7D /* ChatTableViewCell.swift in Sources */,
 				AD6A3ECF21AAA11700D22D7D /* ChatViewController.swift in Sources */,
