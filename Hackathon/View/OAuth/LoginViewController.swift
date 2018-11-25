@@ -11,7 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     @IBOutlet private weak var mailInput: UITextField!
-    @IBOutlet private weak var password: UITextField!
+    @IBOutlet private weak var passwordInput: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +25,10 @@ class LoginViewController: UIViewController {
         mailInput.layer.borderColor = AppColor.main.cgColor
         mailInput.backgroundColor = AppColor.white
         
-        password.layer.cornerRadius = 25
-        password.layer.borderWidth = 1
-        password.layer.borderColor = AppColor.main.cgColor
-        password.backgroundColor = AppColor.white
+        passwordInput.layer.cornerRadius = 25
+        passwordInput.layer.borderWidth = 1
+        passwordInput.layer.borderColor = AppColor.main.cgColor
+        passwordInput.backgroundColor = AppColor.white
     }
     
     @IBAction func loginButton(_ sender: UIButton) {
