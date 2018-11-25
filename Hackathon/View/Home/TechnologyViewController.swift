@@ -10,7 +10,7 @@ import UIKit
 import XLPagerTabStrip
 
 class TechnologyViewController: UIViewController {
-
+    
     private let tableView = UITableView()
     
     override func viewDidLoad() {
