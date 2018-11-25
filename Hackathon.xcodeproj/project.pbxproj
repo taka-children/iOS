@@ -99,7 +99,6 @@
 		B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
 		B798516621AAD8BA0089D1E8 /* SlackTextViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlackTextViewController.framework; path = Carthage/Build/iOS/SlackTextViewController.framework; sourceTree = "<group>"; };
 		B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
-		B7B8DF6321AB35C9005071B4 /* Internet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Internet.storyboard; sourceTree = "<group>"; };
 		B7B8DF6621AB3738005071B4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		B7D3F4A921AAE58200BFDEB6 /* AttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeViewController.swift; sourceTree = "<group>"; };
 		B7D3F4AB21AAE58E00BFDEB6 /* Attribute.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Attribute.storyboard; sourceTree = "<group>"; };
@@ -375,7 +374,6 @@
 			isa = PBXGroup;
 			children = (
 				B7F3C87D21AAD56400A64BAE /* Home.storyboard */,
-				B7B8DF6321AB35C9005071B4 /* Internet.storyboard */,
 				B738A0CB21AB384E00644C26 /* Financial.storyboard */,
 				B738A0CF21AB3A4300644C26 /* Career.storyboard */,
 				B738A0D321AB3B8E00644C26 /* Social.storyboard */,
@@ -670,6 +668,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMPLD4D4X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -692,6 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJMPLD4D4X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
