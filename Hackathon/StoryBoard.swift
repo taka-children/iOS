@@ -18,6 +18,7 @@ class Storyboards {
     static let home = Storyboard<HomeViewController>(name: "Home")
     
     static let internet = Storyboard<InternetViewController>(name: "Internet")
+    static let financial = Storyboard<FinancialViewController>(name: "Financial")
 }
 // MARK: - Storyboard -
 final class Storyboard<InitialVC: UIViewController>: Storyboards {
