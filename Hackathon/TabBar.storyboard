@@ -15,11 +15,13 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7sl-xT-C4P" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Ay-aq-Gj1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="JHi-Qd-MSm" kind="relationship" relationship="viewControllers" id="8L5-tq-wlP"/>
+                        <segue destination="oAC-UH-jKd" kind="relationship" relationship="viewControllers" id="Uw6-Gk-BPO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAb-dQ-gA3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -34,7 +36,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZB-HR-gIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1293" y="-183"/>
+            <point key="canvasLocation" x="1290" y="-367"/>
+        </scene>
+        <!--Consultation-->
+        <scene sceneID="WEp-8w-sJ6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Consultation" id="oAC-UH-jKd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bgz-JK-eI8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQl-AG-qJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298" y="-162"/>
         </scene>
     </scenes>
 </document>
