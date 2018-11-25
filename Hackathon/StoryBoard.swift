@@ -16,6 +16,8 @@ class Storyboards {
     static let main = Storyboard<UIViewController>(name: "Main")
     
     static let home = Storyboard<HomeViewController>(name: "Home")
+    
+    static let internet = Storyboard<InternetViewController>(name: "Internet")
 }
 // MARK: - Storyboard -
 final class Storyboard<InitialVC: UIViewController>: Storyboards {

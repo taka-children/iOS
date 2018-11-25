@@ -7,33 +7,38 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class HomeViewController: UIViewController {
-    
-    @IBOutlet private weak var tableView: UITableView!
+class HomeViewController: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
+        setBarLayout()
         super.viewDidLoad()
         
         self.navigationItem.title = "記事"
-        tableView.delegate = self
-        tableView.dataSource = self
-
-    }
-}
-
-extension HomeViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath)
-        cell.textLabel?.text = String(indexPath.row)
-        return cell
+    override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+        return [
+            Storyboard.internet.instantiateViewController()
+//            Storyboard.userArticle.instantiateViewController(),
+//            Storyboard.userLiktArticle.instantiateViewController(),
+//            Storyboard.userStock.instantiateViewController(),
+        ]
     }
-}
-
-extension HomeViewController: UITableViewDelegate {
     
+    private func setBarLayout() {
+        settings.style.buttonBarBackgroundColor = AppColor.white
+        settings.style.buttonBarItemBackgroundColor = AppColor.white
+        settings.style.buttonBarItemTitleColor = AppColor.main
+        settings.style.selectedBarBackgroundColor = AppColor.main
+        settings.style.selectedBarHeight = 2.5
+        changeCurrentIndexProgressive = { (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) in
+            guard changeCurrentIndex else { return }
+            oldCell?.label.textColor = UIColor.gray
+            oldCell?.label.font = .systemFont(ofSize: CGFloat(15))
+            newCell?.label.textColor = AppColor.main
+            newCell?.label.font = .boldSystemFont(ofSize: 15)
+        }
+    }
 }

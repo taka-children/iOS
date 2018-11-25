@@ -28,6 +28,9 @@
 		B798516321AAD8B90089D1E8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464221AA98B700FE48E7 /* SnapKit.framework */; };
 		B798516421AAD8B90089D1E8 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464321AA98B700FE48E7 /* SwiftyUserDefaults.framework */; };
 		B798516721AAD8BA0089D1E8 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */; };
+		B7B8DF6221AB35B7005071B4 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */; };
+		B7B8DF6421AB35C9005071B4 /* Internet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B8DF6321AB35C9005071B4 /* Internet.storyboard */; };
+		B7B8DF6721AB3738005071B4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8DF6621AB3738005071B4 /* HomeTableViewCell.swift */; };
 		B7D3F4AA21AAE58200BFDEB6 /* AttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4A921AAE58200BFDEB6 /* AttributeViewController.swift */; };
 		B7D3F4AC21AAE58E00BFDEB6 /* Attribute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D3F4AB21AAE58E00BFDEB6 /* Attribute.storyboard */; };
 		B7D3F4AF21AAEBB300BFDEB6 /* ConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4AE21AAEBB300BFDEB6 /* ConsultationViewController.swift */; };
@@ -68,6 +71,9 @@
 		B798515E21AAD82F0089D1E8 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
 		B798516621AAD8BA0089D1E8 /* SlackTextViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlackTextViewController.framework; path = Carthage/Build/iOS/SlackTextViewController.framework; sourceTree = "<group>"; };
+		B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		B7B8DF6321AB35C9005071B4 /* Internet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Internet.storyboard; sourceTree = "<group>"; };
+		B7B8DF6621AB3738005071B4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		B7D3F4A921AAE58200BFDEB6 /* AttributeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeViewController.swift; sourceTree = "<group>"; };
 		B7D3F4AB21AAE58E00BFDEB6 /* Attribute.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Attribute.storyboard; sourceTree = "<group>"; };
 		B7D3F4AE21AAEBB300BFDEB6 /* ConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +259,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B7B8DF6521AB3725005071B4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7B8DF6621AB3738005071B4 /* HomeTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		B7D3F4AD21AAEB9B00BFDEB6 /* Consultation */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +313,8 @@
 			isa = PBXGroup;
 			children = (
 				B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */,
+				B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */,
+				B7B8DF6521AB3725005071B4 /* Cell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -307,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				B7F3C87D21AAD56400A64BAE /* Home.storyboard */,
+				B7B8DF6321AB35C9005071B4 /* Internet.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -375,6 +392,7 @@
 				B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */,
 				B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */,
 				AD6A3ECC21AAA09300D22D7D /* Chat.storyboard in Resources */,
+				B7B8DF6421AB35C9005071B4 /* Internet.storyboard in Resources */,
 				B7D3F4B821AAF32200BFDEB6 /* User.storyboard in Resources */,
 				A59C3ED321AAC2FB00C957B1 /* Login.storyboard in Resources */,
 				AD6A3ED421AAA1B000D22D7D /* ChatTableViewCell.xib in Resources */,
@@ -419,10 +437,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A59C3ED021AAC2D200C957B1 /* LoginViewController.swift in Sources */,
+				B7B8DF6221AB35B7005071B4 /* InternetViewController.swift in Sources */,
 				B798515F21AAD82F0089D1E8 /* AppColor.swift in Sources */,
 				B725462B21AA952200FE48E7 /* ViewController.swift in Sources */,
 				B7D3F4AA21AAE58200BFDEB6 /* AttributeViewController.swift in Sources */,
 				B7D3F4B121AAEBC000BFDEB6 /* ConsultationTableViewCell.swift in Sources */,
+				B7B8DF6721AB3738005071B4 /* HomeTableViewCell.swift in Sources */,
 				A59C3ECE21AAC2AF00C957B1 /* RegisterViewController.swift in Sources */,
 				B7F3C87B21AAD4FF00A64BAE /* TabBarController.swift in Sources */,
 				B7D3F4BC21AAF62A00BFDEB6 /* UserView.swift in Sources */,
