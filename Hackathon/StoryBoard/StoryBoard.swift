@@ -15,7 +15,11 @@ class Storyboards {
     
     static let main = Storyboard<UIViewController>(name: "Main")
     
-    static let home = Storyboard<HomeViewController>(name: "Home")
+    static let home = Storyboard<UINavigationController>(name: "Home")
+    
+    static let mail = Storyboard<UINavigationController>(name: "Consultation")
+    
+    static let user = Storyboard<UINavigationController>(name: "User")
     
     static let internet = Storyboard<InternetViewController>(name: "Internet")
     static let financial = Storyboard<FinancialViewController>(name: "Financial")
