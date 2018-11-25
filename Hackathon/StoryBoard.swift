@@ -20,6 +20,7 @@ class Storyboards {
     static let internet = Storyboard<InternetViewController>(name: "Internet")
     static let financial = Storyboard<FinancialViewController>(name: "Financial")
     static let career = Storyboard<CareerViewController>(name: "Career")
+    static let social = Storyboard<SocialViewController>(name: "Social")
 }
 // MARK: - Storyboard -
 final class Storyboard<InitialVC: UIViewController>: Storyboards {

@@ -24,6 +24,8 @@
 		B738A0CC21AB384E00644C26 /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0CB21AB384E00644C26 /* Financial.storyboard */; };
 		B738A0CE21AB3A1500644C26 /* CareerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0CD21AB3A1500644C26 /* CareerViewController.swift */; };
 		B738A0D021AB3A4300644C26 /* Career.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0CF21AB3A4300644C26 /* Career.storyboard */; };
+		B738A0D221AB3B6700644C26 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0D121AB3B6700644C26 /* SocialViewController.swift */; };
+		B738A0D421AB3B8E00644C26 /* Social.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0D321AB3B8E00644C26 /* Social.storyboard */; };
 		B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B798515C21AAD5C10089D1E8 /* TabBar.storyboard */; };
 		B798515F21AAD82F0089D1E8 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798515E21AAD82F0089D1E8 /* AppColor.swift */; };
 		B798516021AAD8B90089D1E8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464121AA98B700FE48E7 /* Alamofire.framework */; };
@@ -75,6 +77,8 @@
 		B738A0CB21AB384E00644C26 /* Financial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Financial.storyboard; sourceTree = "<group>"; };
 		B738A0CD21AB3A1500644C26 /* CareerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerViewController.swift; sourceTree = "<group>"; };
 		B738A0CF21AB3A4300644C26 /* Career.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Career.storyboard; sourceTree = "<group>"; };
+		B738A0D121AB3B6700644C26 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		B738A0D321AB3B8E00644C26 /* Social.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Social.storyboard; sourceTree = "<group>"; };
 		B798515C21AAD5C10089D1E8 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		B798515E21AAD82F0089D1E8 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
@@ -324,6 +328,7 @@
 				B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */,
 				B738A0C921AB384600644C26 /* FinancialViewController.swift */,
 				B738A0CD21AB3A1500644C26 /* CareerViewController.swift */,
+				B738A0D121AB3B6700644C26 /* SocialViewController.swift */,
 				B7B8DF6521AB3725005071B4 /* Cell */,
 			);
 			path = Home;
@@ -336,6 +341,7 @@
 				B7B8DF6321AB35C9005071B4 /* Internet.storyboard */,
 				B738A0CB21AB384E00644C26 /* Financial.storyboard */,
 				B738A0CF21AB3A4300644C26 /* Career.storyboard */,
+				B738A0D321AB3B8E00644C26 /* Social.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -402,6 +408,7 @@
 				B738A0D021AB3A4300644C26 /* Career.storyboard in Resources */,
 				B7D3F4B421AAEBD800BFDEB6 /* Consultation.storyboard in Resources */,
 				A59C3ED421AAC2FB00C957B1 /* register.storyboard in Resources */,
+				B738A0D421AB3B8E00644C26 /* Social.storyboard in Resources */,
 				B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */,
 				B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */,
 				B738A0CC21AB384E00644C26 /* Financial.storyboard in Resources */,
@@ -459,6 +466,7 @@
 				B7D3F4B121AAEBC000BFDEB6 /* ConsultationTableViewCell.swift in Sources */,
 				B7B8DF6721AB3738005071B4 /* HomeTableViewCell.swift in Sources */,
 				A59C3ECE21AAC2AF00C957B1 /* RegisterViewController.swift in Sources */,
+				B738A0D221AB3B6700644C26 /* SocialViewController.swift in Sources */,
 				B7F3C87B21AAD4FF00A64BAE /* TabBarController.swift in Sources */,
 				B7D3F4BC21AAF62A00BFDEB6 /* UserView.swift in Sources */,
 				B7D3F4BA21AAF33000BFDEB6 /* UserViewController.swift in Sources */,
