@@ -12,7 +12,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="FFE-oP-1Lq">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7sl-xT-C4P" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7sl-xT-C4P" customClass="TabBarController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Ay-aq-Gj1">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
