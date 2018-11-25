@@ -9,21 +9,15 @@
 import UIKit
 
 class GoogleFormViewController: UIViewController {
-
-    
     
     @IBOutlet weak var googleWebView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let favoriteURL = NSURL(string: "https://docs.google.com/forms/d/e/1FAIpQLSdUcKLnomVMI3L81TXVHX-LW8VB32tRzSDpajRrDIFkQxBIcw/viewform?usp=sf_link")
+        let favoriteURL = URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSdUcKLnomVMI3L81TXVHX-LW8VB32tRzSDpajRrDIFkQxBIcw/viewform?usp=sf_link")
+        let urlRequest = URLRequest(url: favoriteURL!)
         
-        let urlRequest = NSURLRequest(url: favoriteURL as! URL)
-        
-        googleWebView.loadRequest(urlRequest as URLRequest)
+        googleWebView.loadRequest(urlRequest)
     }
-    
-
-
 }
