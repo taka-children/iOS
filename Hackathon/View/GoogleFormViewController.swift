@@ -15,6 +15,7 @@ class GoogleFormViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = "申し込み"
         let favoriteURL = URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSdUcKLnomVMI3L81TXVHX-LW8VB32tRzSDpajRrDIFkQxBIcw/viewform?usp=sf_link")
         let urlRequest = URLRequest(url: favoriteURL!)
         
