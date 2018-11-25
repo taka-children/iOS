@@ -34,6 +34,7 @@
 		B738A0D821AB3C0400644C26 /* Technology.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0D721AB3C0400644C26 /* Technology.storyboard */; };
 		B738A0DA21AB3C7B00644C26 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0D921AB3C7B00644C26 /* BusinessViewController.swift */; };
 		B738A0DC21AB3CA300644C26 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0DB21AB3CA300644C26 /* Business.storyboard */; };
+		B738A0DE21AB46AB00644C26 /* Internet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0DD21AB46AB00644C26 /* Internet.storyboard */; };
 		B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B798515C21AAD5C10089D1E8 /* TabBar.storyboard */; };
 		B798515F21AAD82F0089D1E8 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798515E21AAD82F0089D1E8 /* AppColor.swift */; };
 		B798516021AAD8B90089D1E8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464121AA98B700FE48E7 /* Alamofire.framework */; };
@@ -94,6 +95,7 @@
 		B738A0D721AB3C0400644C26 /* Technology.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Technology.storyboard; sourceTree = "<group>"; };
 		B738A0D921AB3C7B00644C26 /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
 		B738A0DB21AB3CA300644C26 /* Business.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
+		B738A0DD21AB46AB00644C26 /* Internet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Internet.storyboard; sourceTree = "<group>"; };
 		B798515C21AAD5C10089D1E8 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		B798515E21AAD82F0089D1E8 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				B7F3C87D21AAD56400A64BAE /* Home.storyboard */,
+				B738A0DD21AB46AB00644C26 /* Internet.storyboard */,
 				B738A0CB21AB384E00644C26 /* Financial.storyboard */,
 				B738A0CF21AB3A4300644C26 /* Career.storyboard */,
 				B738A0D321AB3B8E00644C26 /* Social.storyboard */,
@@ -457,6 +460,7 @@
 				B7D3F4B821AAF32200BFDEB6 /* User.storyboard in Resources */,
 				A59C3ED321AAC2FB00C957B1 /* Login.storyboard in Resources */,
 				AD6A3ED421AAA1B000D22D7D /* ChatTableViewCell.xib in Resources */,
+				B738A0DE21AB46AB00644C26 /* Internet.storyboard in Resources */,
 				B725463021AA952300FE48E7 /* Assets.xcassets in Resources */,
 				B725462E21AA952200FE48E7 /* Main.storyboard in Resources */,
 				B7F3C87E21AAD56400A64BAE /* Home.storyboard in Resources */,
