@@ -185,6 +185,7 @@
 		AD6A3ED921AB255500D22D7D /* Ofice */ = {
 			isa = PBXGroup;
 			children = (
+				AD6A3EE021AB486F00D22D7D /* GoogleForm.storyboard */,
 				AD6A3EDA21AB256F00D22D7D /* Ofice.storyboard */,
 			);
 			path = Ofice;
@@ -194,24 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				AD6A3EDD21AB340200D22D7D /* OficeViewController.swift */,
-			);
-			name = Ofice;
-			sourceTree = "<group>";
-		};
-		AD6A3EDF21AB485000D22D7D /* GoogleForm */ = {
-			isa = PBXGroup;
-			children = (
-				AD6A3EE021AB486F00D22D7D /* GoogleForm.storyboard */,
-			);
-			path = GoogleForm;
-			sourceTree = "<group>";
-		};
-		AD6A3EE221AB492F00D22D7D /* GoogleForm */ = {
-			isa = PBXGroup;
-			children = (
 				AD6A3EE321AB494900D22D7D /* GoogleFormViewController.swift */,
 			);
-			name = GoogleForm;
+			name = Ofice;
 			sourceTree = "<group>";
 		};
 		B725461C21AA952100FE48E7 = {
@@ -258,7 +244,6 @@
 		B725463B21AA957800FE48E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AD6A3EE221AB492F00D22D7D /* GoogleForm */,
 				B7D3F4B521AAF31700BFDEB6 /* User */,
 				AD6A3EDC21AB33EA00D22D7D /* Ofice */,
 				B7D3F4AD21AAEB9B00BFDEB6 /* Consultation */,
@@ -282,7 +267,6 @@
 		B725463D21AA958100FE48E7 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				AD6A3EDF21AB485000D22D7D /* GoogleForm */,
 				B7D3F4B621AAF31C00BFDEB6 /* User */,
 				B7D3F4B221AAEBCB00BFDEB6 /* Consultation */,
 				B7F3C87C21AAD56400A64BAE /* Home */,
