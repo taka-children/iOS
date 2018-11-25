@@ -20,7 +20,8 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         return [
-            Storyboard.internet.instantiateViewController()
+            Storyboard.internet.instantiateViewController(),
+            Storyboard.financial.instantiateViewController()
 //            Storyboard.userArticle.instantiateViewController(),
 //            Storyboard.userLiktArticle.instantiateViewController(),
 //            Storyboard.userStock.instantiateViewController(),
