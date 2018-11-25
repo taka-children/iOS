@@ -18,33 +18,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AXg-uh-k6z">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zT6-Ff-Nb8" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="64" width="375" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeCell" id="24a-ci-qHR">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="24a-ci-qHR" id="Cra-VK-tZZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aBc-g1-pGJ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6qV-Cr-Hwx">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tPq-4M-gIe" customClass="ButtonBarViewCell" customModule="XLPagerTabStrip">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3v0-B8-yPa">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GKD-pK-KWR" firstAttribute="trailing" secondItem="AXg-uh-k6z" secondAttribute="trailing" id="0Lu-6K-jxP"/>
-                            <constraint firstItem="AXg-uh-k6z" firstAttribute="top" secondItem="GKD-pK-KWR" secondAttribute="top" id="8XM-po-8dA"/>
-                            <constraint firstItem="GKD-pK-KWR" firstAttribute="bottom" secondItem="AXg-uh-k6z" secondAttribute="bottom" id="LNc-cI-KUP"/>
-                            <constraint firstItem="AXg-uh-k6z" firstAttribute="leading" secondItem="GKD-pK-KWR" secondAttribute="leading" id="Nd5-is-eu4"/>
+                            <constraint firstItem="3v0-B8-yPa" firstAttribute="top" secondItem="zT6-Ff-Nb8" secondAttribute="bottom" id="9tD-5c-Nys"/>
+                            <constraint firstItem="zT6-Ff-Nb8" firstAttribute="top" secondItem="GKD-pK-KWR" secondAttribute="top" id="XeE-Eh-QWX"/>
+                            <constraint firstItem="zT6-Ff-Nb8" firstAttribute="leading" secondItem="GKD-pK-KWR" secondAttribute="leading" id="dHo-VK-WU1"/>
+                            <constraint firstItem="GKD-pK-KWR" firstAttribute="trailing" secondItem="zT6-Ff-Nb8" secondAttribute="trailing" id="jWM-qY-L0N"/>
+                            <constraint firstItem="3v0-B8-yPa" firstAttribute="leading" secondItem="GKD-pK-KWR" secondAttribute="leading" id="rGc-Qx-bsa"/>
+                            <constraint firstItem="GKD-pK-KWR" firstAttribute="trailing" secondItem="3v0-B8-yPa" secondAttribute="trailing" id="rWs-ah-2Oa"/>
+                            <constraint firstItem="GKD-pK-KWR" firstAttribute="bottom" secondItem="3v0-B8-yPa" secondAttribute="bottom" id="zbS-yi-Qqh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GKD-pK-KWR"/>
                     </view>
                     <navigationItem key="navigationItem" id="O4R-Id-qsY"/>
                     <connections>
-                        <outlet property="tableView" destination="AXg-uh-k6z" id="XKG-jA-P3c"/>
+                        <outlet property="buttonBarView" destination="zT6-Ff-Nb8" id="JFS-wS-NeG"/>
+                        <outlet property="containerView" destination="3v0-B8-yPa" id="Pog-xF-5cp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xnj-uE-hYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
