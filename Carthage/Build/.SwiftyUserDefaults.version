@@ -1,0 +1,9 @@
+{
+  "commitish" : "4.0.0-alpha.1",
+  "iOS" : [
+    {
+      "name" : "SwiftyUserDefaults",
+      "hash" : "4bbefe8f33eed075eed190fc7086667d163d33244689d30996efe4593982f27c"
+    }
+  ]
+}
