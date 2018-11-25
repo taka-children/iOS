@@ -221,8 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				B725463D21AA958100FE48E7 /* StoryBoard */,
-				B7F3C87521AAD4E100A64BAE /* StoryBoard.swift */,
-				B798515C21AAD5C10089D1E8 /* TabBar.storyboard */,
 				B725463C21AA957D00FE48E7 /* Model */,
 				B725463B21AA957800FE48E7 /* View */,
 				B725463A21AA957200FE48E7 /* API */,
@@ -273,6 +271,8 @@
 				AD6A3ED921AB255500D22D7D /* Ofice */,
 				A59C3EC721AAC26B00C957B1 /* OAuth */,
 				AD6A3ECA21AAA06800D22D7D /* Chat */,
+				B7F3C87521AAD4E100A64BAE /* StoryBoard.swift */,
+				B798515C21AAD5C10089D1E8 /* TabBar.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
