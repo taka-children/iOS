@@ -190,13 +190,13 @@
                     <navigationItem key="navigationItem" id="Jmt-CL-bOU"/>
                     <size key="freeformSize" width="375" height="1200"/>
                     <connections>
-                        <outlet property="OficeImageView" destination="TQk-sw-I7K" id="6KD-Aq-Hvx"/>
                         <outlet property="dayCountLabel" destination="AEr-R5-pyt" id="tha-Yg-tN2"/>
                         <outlet property="headLine2Label" destination="BBN-z2-yBe" id="KBt-ax-uAc"/>
                         <outlet property="headLine3Label" destination="XUt-YQ-e7D" id="000-1S-DGz"/>
                         <outlet property="headLineTextView" destination="xCv-Tn-dPC" id="arm-Ik-ovM"/>
                         <outlet property="intro2TextView" destination="j3d-BV-e2E" id="49c-xZ-cqx"/>
                         <outlet property="intro3TextView" destination="Ngi-I5-xWa" id="uXf-Hv-DnP"/>
+                        <outlet property="oficeImageView" destination="TQk-sw-I7K" id="RmE-ne-1gj"/>
                         <outlet property="oficeNameLabel" destination="ly6-L1-wiK" id="gze-fp-6EL"/>
                         <outlet property="personLabel" destination="YB8-i8-Fhk" id="98R-IO-qTh"/>
                         <outlet property="placeLabel" destination="FWx-j5-4mv" id="Kwc-a8-RFh"/>
