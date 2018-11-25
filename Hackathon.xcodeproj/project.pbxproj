@@ -19,6 +19,8 @@
 		AD6A3ED821AB18E400D22D7D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3ED721AB18E400D22D7D /* Profile.storyboard */; };
 		AD6A3EDB21AB256F00D22D7D /* Ofice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3EDA21AB256F00D22D7D /* Ofice.storyboard */; };
 		AD6A3EDE21AB340200D22D7D /* OficeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3EDD21AB340200D22D7D /* OficeViewController.swift */; };
+		AD6A3EE121AB486F00D22D7D /* GoogleForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6A3EE021AB486F00D22D7D /* GoogleForm.storyboard */; };
+		AD6A3EE421AB494900D22D7D /* GoogleFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6A3EE321AB494900D22D7D /* GoogleFormViewController.swift */; };
 		B725462921AA952200FE48E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725462821AA952200FE48E7 /* AppDelegate.swift */; };
 		B725462B21AA952200FE48E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B725462A21AA952200FE48E7 /* ViewController.swift */; };
 		B725462E21AA952200FE48E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B725462C21AA952200FE48E7 /* Main.storyboard */; };
@@ -73,6 +75,8 @@
 		AD6A3ED721AB18E400D22D7D /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		AD6A3EDA21AB256F00D22D7D /* Ofice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ofice.storyboard; sourceTree = "<group>"; };
 		AD6A3EDD21AB340200D22D7D /* OficeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficeViewController.swift; sourceTree = "<group>"; };
+		AD6A3EE021AB486F00D22D7D /* GoogleForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleForm.storyboard; sourceTree = "<group>"; };
+		AD6A3EE321AB494900D22D7D /* GoogleFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleFormViewController.swift; sourceTree = "<group>"; };
 		B725462521AA952200FE48E7 /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B725462821AA952200FE48E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B725462A21AA952200FE48E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +202,22 @@
 			name = Ofice;
 			sourceTree = "<group>";
 		};
+		AD6A3EDF21AB485000D22D7D /* GoogleForm */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A3EE021AB486F00D22D7D /* GoogleForm.storyboard */,
+			);
+			path = GoogleForm;
+			sourceTree = "<group>";
+		};
+		AD6A3EE221AB492F00D22D7D /* GoogleForm */ = {
+			isa = PBXGroup;
+			children = (
+				AD6A3EE321AB494900D22D7D /* GoogleFormViewController.swift */,
+			);
+			name = GoogleForm;
+			sourceTree = "<group>";
+		};
 		B725461C21AA952100FE48E7 = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +263,7 @@
 		B725463B21AA957800FE48E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD6A3EE221AB492F00D22D7D /* GoogleForm */,
 				B7D3F4B521AAF31700BFDEB6 /* User */,
 				AD6A3EDC21AB33EA00D22D7D /* Ofice */,
 				B7D3F4AD21AAEB9B00BFDEB6 /* Consultation */,
@@ -268,6 +289,7 @@
 		B725463D21AA958100FE48E7 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				AD6A3EDF21AB485000D22D7D /* GoogleForm */,
 				B7D3F4B621AAF31C00BFDEB6 /* User */,
 				B7D3F4B221AAEBCB00BFDEB6 /* Consultation */,
 				B7F3C87C21AAD56400A64BAE /* Home */,
@@ -456,6 +478,7 @@
 				B738A0CC21AB384E00644C26 /* Financial.storyboard in Resources */,
 				AD6A3ECC21AAA09300D22D7D /* Chat.storyboard in Resources */,
 				AD6A3EDB21AB256F00D22D7D /* Ofice.storyboard in Resources */,
+				AD6A3EE121AB486F00D22D7D /* GoogleForm.storyboard in Resources */,
 				AD6A3ED821AB18E400D22D7D /* Profile.storyboard in Resources */,
 				B7D3F4B821AAF32200BFDEB6 /* User.storyboard in Resources */,
 				A59C3ED321AAC2FB00C957B1 /* Login.storyboard in Resources */,
@@ -508,7 +531,7 @@
 				B798515F21AAD82F0089D1E8 /* AppColor.swift in Sources */,
 				B725462B21AA952200FE48E7 /* ViewController.swift in Sources */,
 				B7D3F4AA21AAE58200BFDEB6 /* AttributeViewController.swift in Sources */,
-				B738A0D621AB3BFF00644C26 /* TechnologyViewController.swift in Sources */,
+				AD6A3EE421AB494900D22D7D /* GoogleFormViewController.swift in Sources */,
 				B7D3F4B121AAEBC000BFDEB6 /* ConsultationTableViewCell.swift in Sources */,
 				B7B8DF6721AB3738005071B4 /* HomeTableViewCell.swift in Sources */,
 				A59C3ECE21AAC2AF00C957B1 /* RegisterViewController.swift in Sources */,

@@ -160,6 +160,7 @@
                                                 <state key="normal" title="遊びに行く！！"/>
                                                 <connections>
                                                     <action selector="playButtonPressed:" destination="mvK-l8-r1k" eventType="touchUpInside" id="Rr5-Xz-wyi"/>
+                                                    <segue destination="RdX-gI-tly" kind="show" identifier="toGoogleForm" id="gtQ-t1-5eJ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -209,6 +210,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vh-gV-I4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1007.2" y="176.31184407796104"/>
+        </scene>
+        <!--GoogleForm-->
+        <scene sceneID="MWE-bN-k8m">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GoogleForm" id="RdX-gI-tly" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5z-KR-q9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="310"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q5z-sa-bO7">
