@@ -46,6 +46,7 @@
                                 <state key="normal" title="登録"/>
                                 <connections>
                                     <action selector="registerButton:" destination="alF-13-niq" eventType="touchUpInside" id="Mth-Vu-haq"/>
+                                    <segue destination="wX6-1J-Fwc" kind="show" identifier="toProfile" id="es8-r3-3AX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,6 +73,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRm-rE-zGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1612" y="-154.27286356821591"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="A1k-pD-AvM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="wX6-1J-Fwc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49B-a4-eAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="-166"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K8V-mx-pcj">
