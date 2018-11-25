@@ -22,10 +22,9 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         return [
             Storyboard.internet.instantiateViewController(),
             Storyboard.financial.instantiateViewController(),
-            Storyboard.career.instantiateViewController()
-//            Storyboard.userArticle.instantiateViewController(),
-//            Storyboard.userLiktArticle.instantiateViewController(),
-//            Storyboard.userStock.instantiateViewController(),
+            Storyboard.career.instantiateViewController(),
+            Storyboard.social.instantiateViewController(),
+            Storyboard.technology.instantiateViewController()
         ]
     }
     
