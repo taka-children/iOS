@@ -43,7 +43,6 @@
 		B798516421AAD8B90089D1E8 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464321AA98B700FE48E7 /* SwiftyUserDefaults.framework */; };
 		B798516721AAD8BA0089D1E8 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */; };
 		B7B8DF6221AB35B7005071B4 /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */; };
-		B7B8DF6421AB35C9005071B4 /* Internet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B8DF6321AB35C9005071B4 /* Internet.storyboard */; };
 		B7B8DF6721AB3738005071B4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B8DF6621AB3738005071B4 /* HomeTableViewCell.swift */; };
 		B7D3F4AA21AAE58200BFDEB6 /* AttributeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4A921AAE58200BFDEB6 /* AttributeViewController.swift */; };
 		B7D3F4AC21AAE58E00BFDEB6 /* Attribute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D3F4AB21AAE58E00BFDEB6 /* Attribute.storyboard */; };
