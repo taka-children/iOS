@@ -28,7 +28,6 @@
 		B798516321AAD8B90089D1E8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464221AA98B700FE48E7 /* SnapKit.framework */; };
 		B798516421AAD8B90089D1E8 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464321AA98B700FE48E7 /* SwiftyUserDefaults.framework */; };
 		B798516721AAD8BA0089D1E8 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */; };
-		B798516821AAD8BA0089D1E8 /* SlackTextViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B798516621AAD8BA0089D1E8 /* SlackTextViewController.framework */; };
 		B7F3C87621AAD4E100A64BAE /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87521AAD4E100A64BAE /* StoryBoard.swift */; };
 		B7F3C87921AAD4F500A64BAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */; };
 		B7F3C87B21AAD4FF00A64BAE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87A21AAD4FF00A64BAE /* TabBarController.swift */; };
@@ -72,7 +71,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B798516721AAD8BA0089D1E8 /* XLPagerTabStrip.framework in Frameworks */,
-				B798516821AAD8BA0089D1E8 /* SlackTextViewController.framework in Frameworks */,
 				B798516021AAD8B90089D1E8 /* Alamofire.framework in Frameworks */,
 				B798516121AAD8B90089D1E8 /* RxSwift.framework in Frameworks */,
 				B798516221AAD8B90089D1E8 /* SDWebImage.framework in Frameworks */,
@@ -334,7 +332,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SlackTextViewController.framework",
 			);
 			outputFileListPaths = (
 			);
