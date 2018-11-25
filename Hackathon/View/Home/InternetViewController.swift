@@ -18,6 +18,7 @@ class InternetViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homeCell")
         self.view.addSubview(tableView)
     }
     
@@ -36,7 +37,7 @@ extension InternetViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath) as! HomeTableViewCell
         cell.textLabel?.text = String(indexPath.row)
         return cell
     }
