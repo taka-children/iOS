@@ -24,7 +24,8 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
             Storyboard.financial.instantiateViewController(),
             Storyboard.career.instantiateViewController(),
             Storyboard.social.instantiateViewController(),
-            Storyboard.technology.instantiateViewController()
+            Storyboard.technology.instantiateViewController(),
+            Storyboard.business.instantiateViewController()
         ]
     }
     
