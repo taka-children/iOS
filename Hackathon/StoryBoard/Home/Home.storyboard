@@ -59,6 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="O4R-Id-qsY"/>
                     <connections>
+                        <outlet property="buttonBarView" destination="zT6-Ff-Nb8" id="JFS-wS-NeG"/>
                         <outlet property="containerView" destination="3v0-B8-yPa" id="Pog-xF-5cp"/>
                     </connections>
                 </viewController>
