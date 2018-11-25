@@ -22,6 +22,8 @@
 		B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B725463121AA952300FE48E7 /* LaunchScreen.storyboard */; };
 		B738A0CA21AB384600644C26 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0C921AB384600644C26 /* FinancialViewController.swift */; };
 		B738A0CC21AB384E00644C26 /* Financial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0CB21AB384E00644C26 /* Financial.storyboard */; };
+		B738A0CE21AB3A1500644C26 /* CareerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B738A0CD21AB3A1500644C26 /* CareerViewController.swift */; };
+		B738A0D021AB3A4300644C26 /* Career.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B738A0CF21AB3A4300644C26 /* Career.storyboard */; };
 		B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B798515C21AAD5C10089D1E8 /* TabBar.storyboard */; };
 		B798515F21AAD82F0089D1E8 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B798515E21AAD82F0089D1E8 /* AppColor.swift */; };
 		B798516021AAD8B90089D1E8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B725464121AA98B700FE48E7 /* Alamofire.framework */; };
@@ -71,6 +73,8 @@
 		B725464521AA98B700FE48E7 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		B738A0C921AB384600644C26 /* FinancialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
 		B738A0CB21AB384E00644C26 /* Financial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Financial.storyboard; sourceTree = "<group>"; };
+		B738A0CD21AB3A1500644C26 /* CareerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerViewController.swift; sourceTree = "<group>"; };
+		B738A0CF21AB3A4300644C26 /* Career.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Career.storyboard; sourceTree = "<group>"; };
 		B798515C21AAD5C10089D1E8 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		B798515E21AAD82F0089D1E8 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = Carthage/Build/iOS/XLPagerTabStrip.framework; sourceTree = "<group>"; };
@@ -319,6 +323,7 @@
 				B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */,
 				B7B8DF6121AB35B7005071B4 /* InternetViewController.swift */,
 				B738A0C921AB384600644C26 /* FinancialViewController.swift */,
+				B738A0CD21AB3A1500644C26 /* CareerViewController.swift */,
 				B7B8DF6521AB3725005071B4 /* Cell */,
 			);
 			path = Home;
@@ -330,6 +335,7 @@
 				B7F3C87D21AAD56400A64BAE /* Home.storyboard */,
 				B7B8DF6321AB35C9005071B4 /* Internet.storyboard */,
 				B738A0CB21AB384E00644C26 /* Financial.storyboard */,
+				B738A0CF21AB3A4300644C26 /* Career.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B738A0D021AB3A4300644C26 /* Career.storyboard in Resources */,
 				B7D3F4B421AAEBD800BFDEB6 /* Consultation.storyboard in Resources */,
 				A59C3ED421AAC2FB00C957B1 /* register.storyboard in Resources */,
 				B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */,
@@ -445,6 +452,7 @@
 			files = (
 				A59C3ED021AAC2D200C957B1 /* LoginViewController.swift in Sources */,
 				B7B8DF6221AB35B7005071B4 /* InternetViewController.swift in Sources */,
+				B738A0CE21AB3A1500644C26 /* CareerViewController.swift in Sources */,
 				B798515F21AAD82F0089D1E8 /* AppColor.swift in Sources */,
 				B725462B21AA952200FE48E7 /* ViewController.swift in Sources */,
 				B7D3F4AA21AAE58200BFDEB6 /* AttributeViewController.swift in Sources */,
