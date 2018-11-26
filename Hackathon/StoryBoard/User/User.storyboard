@@ -20,11 +20,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qpA-bL-XpA"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xoh-9G-l4p"/>
+                    <navigationItem key="navigationItem" id="xoh-9G-l4p">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="setting" id="yLL-vx-bXV">
+                            <connections>
+                                <segue destination="5Ii-39-TMb" kind="push" id="idQ-jm-BV0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsm-Ps-mol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1255.2" y="-171.36431784107947"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="Zn0-nl-sFx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setting" id="5Ii-39-TMb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="h5Q-Wn-Jis"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kw-bY-6wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="-200"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rcV-YT-kmL">
@@ -45,4 +61,7 @@
             <point key="canvasLocation" x="316" y="-171.36431784107947"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="setting" width="44" height="44"/>
+    </resources>
 </document>
