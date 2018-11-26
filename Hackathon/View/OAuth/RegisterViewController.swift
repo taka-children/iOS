@@ -46,6 +46,7 @@ class RegisterViewController: UIViewController {
                 return
             }
             print("アカウント作成成功")
+            AppUser.saveEmail(email: email)
             self.performSegue(withIdentifier: "toProfile", sender: nil)
         }
     }

@@ -42,6 +42,8 @@ struct AppUser {
 }
 
 extension AppUser {
+    
+    /// メールアドレスの保存
     static func saveEmail(email: String) {
         Defaults[.email] = email
     }
