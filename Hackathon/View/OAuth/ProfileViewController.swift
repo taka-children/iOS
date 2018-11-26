@@ -36,12 +36,14 @@ class ProfileViewController: UIViewController, UITextViewDelegate {
         guard let name = userNameTextField.text else { return }
         guard let sex = userSexTextField.text else { return }
         guard let profile = userIntroduceTextView.text else { return }
-        
+        guard let birthday = userBirthTextField.text else { return }
+
         if name.isEmpty { return }
         if sex.isEmpty { return }
         if profile.isEmpty { return }
+        if birthday.isEmpty { return }
         
-//        AppUser.save(name: <#T##String#>, sex: <#T##String#>, birthday: <#T##Data#>, profile: <#T##String#>)
+        AppUser.save(name: name, sex: sex, profile: profile, birthday: birthday)
         self.performSegue(withIdentifier: "toTabBar", sender: nil)
     }
     

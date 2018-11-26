@@ -36,7 +36,7 @@ struct AppUser {
     }
     
     /// ユーザーの生年月日
-    static var birthday: Data {
+    static var birthday: String {
         return Defaults[.birthday]
     }
 }
@@ -48,19 +48,20 @@ extension AppUser {
         Defaults[.email] = email
     }
     
-    static func save(name: String, sex: String, birthday: Data, profile: String) {
+    /// 基本情報を保存
+    static func save(name: String, sex: String, profile: String, birthday: String) {
         Defaults[.name] = name
         Defaults[.sex] = sex
-        Defaults[.birthday] = birthday
         Defaults[.profile] = profile
+        Defaults[.birthday] = birthday
     }
 }
 
 private extension DefaultsKeys {
-    static let email = DefaultsKey<String>("email", defaultValue: "")
-    static let imageURL = DefaultsKey<String>("user_image_URL", defaultValue: "")
-    static let name = DefaultsKey<String>("user_name", defaultValue: "")
-    static let profile = DefaultsKey<String>("profile_text", defaultValue: "")
-    static let sex = DefaultsKey<String>("user_sex", defaultValue: "")
-    static let birthday = DefaultsKey<Data>("user_birthday")
+    static let email = DefaultsKey<String>("email")
+    static let imageURL = DefaultsKey<String>("user_image_URL")
+    static let name = DefaultsKey<String>("user_name")
+    static let profile = DefaultsKey<String>("profile_text")
+    static let sex = DefaultsKey<String>("user_sex")
+    static let birthday = DefaultsKey<String>("user_birthday")
 }
