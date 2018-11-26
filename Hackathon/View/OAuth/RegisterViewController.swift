@@ -36,7 +36,6 @@ class RegisterViewController: UIViewController {
     
     
     @IBAction func registerButton(_ sender: UIButton) {
-        
         guard let email = mailInput.text else { return }
         guard let pass = passwordInput.text else { return }
         if email.isEmpty { return }
