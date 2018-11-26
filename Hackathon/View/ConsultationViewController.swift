@@ -21,6 +21,7 @@ class ConsultationViewController: UIViewController {
         navigationItem.title = "相談相手一覧"
         tableView.register(ConsultationTableViewCell.self, forCellReuseIdentifier: "ConsultationCell")
         tableView.frame = self.view.bounds
+        tableView.tableFooterView = UIView()
         tableView.rowHeight = 80
         self.view.addSubview(tableView)
         tableView.dataSource = self
