@@ -13,7 +13,7 @@ class AttributeViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var doneButton: UIButton!
 
-    private let items = ["IT/通信", "インターネット", "広告", "メディア", "サービス", "メーカー", "総合商社", "専門商社", "メディカル", "金融", "建設", "プラント", "不動産", "小売", "外食"]
+    private let items = ["インターネット", "金融・マーケット", "キャリア・教育", "社会・スポーツ", "テクノロジー", "ビジネス"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

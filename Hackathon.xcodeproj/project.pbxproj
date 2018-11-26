@@ -55,13 +55,22 @@
 		B7D3F4BA21AAF33000BFDEB6 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4B921AAF33000BFDEB6 /* UserViewController.swift */; };
 		B7D3F4BC21AAF62A00BFDEB6 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4BB21AAF62A00BFDEB6 /* UserView.swift */; };
 		B7D3F4BF21AAF7DB00BFDEB6 /* height.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4BE21AAF7DB00BFDEB6 /* height.swift */; };
+		B7DCEA3721AB6DCB004A502C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7DCEA3621AB6DCB004A502C /* GoogleService-Info.plist */; };
+		B7DCEA3921AB940B004A502C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCEA3821AB940B004A502C /* User.swift */; };
+		B7DCEA3B21ABA500004A502C /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DCEA3A21ABA500004A502C /* Setting.storyboard */; };
+		B7DCEA3D21ABA50C004A502C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCEA3C21ABA50C004A502C /* SettingViewController.swift */; };
+		B7DCEA4021ABA64C004A502C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCEA3F21ABA64C004A502C /* SettingTableViewCell.swift */; };
+		B7DCEA4221ABAF0A004A502C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DCEA4121ABAF0A004A502C /* RxCocoa.framework */; };
 		B7F3C87621AAD4E100A64BAE /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87521AAD4E100A64BAE /* StoryBoard.swift */; };
 		B7F3C87921AAD4F500A64BAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */; };
 		B7F3C87B21AAD4FF00A64BAE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87A21AAD4FF00A64BAE /* TabBarController.swift */; };
 		B7F3C87E21AAD56400A64BAE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F3C87D21AAD56400A64BAE /* Home.storyboard */; };
+		DFB2329E838CEFCA7EAEA61E /* Pods_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B350C0195E7293D837857F /* Pods_Hackathon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58B350C0195E7293D837857F /* Pods_Hackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B13170621C201D7850F18BE /* Pods-Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon/Pods-Hackathon.release.xcconfig"; sourceTree = "<group>"; };
 		A59C3ECD21AAC2AF00C957B1 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A59C3ECF21AAC2D200C957B1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A59C3ED121AAC2FB00C957B1 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
@@ -113,10 +122,17 @@
 		B7D3F4B921AAF33000BFDEB6 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		B7D3F4BB21AAF62A00BFDEB6 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		B7D3F4BE21AAF7DB00BFDEB6 /* height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = height.swift; sourceTree = "<group>"; };
+		B7DCEA3621AB6DCB004A502C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7DCEA3821AB940B004A502C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B7DCEA3A21ABA500004A502C /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		B7DCEA3C21ABA50C004A502C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B7DCEA3F21ABA64C004A502C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		B7DCEA4121ABAF0A004A502C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		B7F3C87521AAD4E100A64BAE /* StoryBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B7F3C87A21AAD4FF00A64BAE /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B7F3C87D21AAD56400A64BAE /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D95A099127C58EA3DA561B1D /* Pods-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon/Pods-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,18 +140,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DCEA4221ABAF0A004A502C /* RxCocoa.framework in Frameworks */,
 				B798516721AAD8BA0089D1E8 /* XLPagerTabStrip.framework in Frameworks */,
 				B798516021AAD8B90089D1E8 /* Alamofire.framework in Frameworks */,
 				B798516121AAD8B90089D1E8 /* RxSwift.framework in Frameworks */,
 				B798516221AAD8B90089D1E8 /* SDWebImage.framework in Frameworks */,
 				B798516321AAD8B90089D1E8 /* SnapKit.framework in Frameworks */,
 				B798516421AAD8B90089D1E8 /* SwiftyUserDefaults.framework in Frameworks */,
+				DFB2329E838CEFCA7EAEA61E /* Pods_Hackathon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5652A93FF6AF94DA16DE54D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D95A099127C58EA3DA561B1D /* Pods-Hackathon.debug.xcconfig */,
+				7B13170621C201D7850F18BE /* Pods-Hackathon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A59C3EC721AAC26B00C957B1 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +235,7 @@
 				B725462721AA952200FE48E7 /* Hackathon */,
 				B725462621AA952200FE48E7 /* Products */,
 				B725464021AA98B700FE48E7 /* Frameworks */,
+				A5652A93FF6AF94DA16DE54D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,6 +258,7 @@
 				B725462F21AA952300FE48E7 /* Assets.xcassets */,
 				B725463121AA952300FE48E7 /* LaunchScreen.storyboard */,
 				B725463421AA952300FE48E7 /* Info.plist */,
+				B7DCEA3621AB6DCB004A502C /* GoogleService-Info.plist */,
 			);
 			path = Hackathon;
 			sourceTree = "<group>";
@@ -261,6 +290,7 @@
 			children = (
 				B798515E21AAD82F0089D1E8 /* AppColor.swift */,
 				B738A0E321AB538700644C26 /* AppUser.swift */,
+				B7DCEA3821AB940B004A502C /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -283,6 +313,7 @@
 		B725464021AA98B700FE48E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7DCEA4121ABAF0A004A502C /* RxCocoa.framework */,
 				B798516621AAD8BA0089D1E8 /* SlackTextViewController.framework */,
 				B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */,
 				B725464121AA98B700FE48E7 /* Alamofire.framework */,
@@ -290,6 +321,7 @@
 				B725464521AA98B700FE48E7 /* SDWebImage.framework */,
 				B725464221AA98B700FE48E7 /* SnapKit.framework */,
 				B725464321AA98B700FE48E7 /* SwiftyUserDefaults.framework */,
+				58B350C0195E7293D837857F /* Pods_Hackathon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -324,6 +356,8 @@
 			children = (
 				B7D3F4B921AAF33000BFDEB6 /* UserViewController.swift */,
 				B7D3F4BB21AAF62A00BFDEB6 /* UserView.swift */,
+				B7DCEA3C21ABA50C004A502C /* SettingViewController.swift */,
+				B7DCEA3E21ABA641004A502C /* Cell */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -332,6 +366,7 @@
 			isa = PBXGroup;
 			children = (
 				B7D3F4B721AAF32200BFDEB6 /* User.storyboard */,
+				B7DCEA3A21ABA500004A502C /* Setting.storyboard */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -342,6 +377,14 @@
 				B7D3F4BE21AAF7DB00BFDEB6 /* height.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B7DCEA3E21ABA641004A502C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7DCEA3F21ABA64C004A502C /* SettingTableViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		B7F3C87721AAD4F500A64BAE /* Home */ = {
@@ -380,10 +423,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B725463721AA952300FE48E7 /* Build configuration list for PBXNativeTarget "Hackathon" */;
 			buildPhases = (
+				21EC419207CAE79368619201 /* [CP] Check Pods Manifest.lock */,
 				B725462121AA952200FE48E7 /* Sources */,
 				B725462221AA952200FE48E7 /* Frameworks */,
 				B725462321AA952200FE48E7 /* Resources */,
 				B725464B21AA98BD00FE48E7 /* ShellScript */,
+				B6182C8A652B7038640340E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -441,6 +486,7 @@
 				B798515D21AAD5C10089D1E8 /* TabBar.storyboard in Resources */,
 				B725463321AA952300FE48E7 /* LaunchScreen.storyboard in Resources */,
 				B738A0CC21AB384E00644C26 /* Financial.storyboard in Resources */,
+				B7DCEA3B21ABA500004A502C /* Setting.storyboard in Resources */,
 				AD6A3ECC21AAA09300D22D7D /* Chat.storyboard in Resources */,
 				AD6A3EDB21AB256F00D22D7D /* Ofice.storyboard in Resources */,
 				AD6A3EE121AB486F00D22D7D /* GoogleForm.storyboard in Resources */,
@@ -452,12 +498,63 @@
 				B725463021AA952300FE48E7 /* Assets.xcassets in Resources */,
 				B7F3C87E21AAD56400A64BAE /* Home.storyboard in Resources */,
 				B7D3F4AC21AAE58E00BFDEB6 /* Attribute.storyboard in Resources */,
+				B7DCEA3721AB6DCB004A502C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		21EC419207CAE79368619201 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hackathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6182C8A652B7038640340E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hackathon/Pods-Hackathon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hackathon/Pods-Hackathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B725464B21AA98BD00FE48E7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +569,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -492,7 +590,9 @@
 				B738A0DA21AB3C7B00644C26 /* BusinessViewController.swift in Sources */,
 				B738A0E221AB4E1C00644C26 /* TechnologyViewController.swift in Sources */,
 				B7B8DF6221AB35B7005071B4 /* InternetViewController.swift in Sources */,
+				B7DCEA4021ABA64C004A502C /* SettingTableViewCell.swift in Sources */,
 				B738A0CE21AB3A1500644C26 /* CareerViewController.swift in Sources */,
+				B7DCEA3921AB940B004A502C /* User.swift in Sources */,
 				B798515F21AAD82F0089D1E8 /* AppColor.swift in Sources */,
 				B7D3F4AA21AAE58200BFDEB6 /* AttributeViewController.swift in Sources */,
 				AD6A3EE421AB494900D22D7D /* GoogleFormViewController.swift in Sources */,
@@ -506,6 +606,7 @@
 				B7D3F4BC21AAF62A00BFDEB6 /* UserView.swift in Sources */,
 				B7D3F4BA21AAF33000BFDEB6 /* UserViewController.swift in Sources */,
 				B7D3F4AF21AAEBB300BFDEB6 /* ConsultationViewController.swift in Sources */,
+				B7DCEA3D21ABA50C004A502C /* SettingViewController.swift in Sources */,
 				B738A0CA21AB384600644C26 /* FinancialViewController.swift in Sources */,
 				B7F3C87921AAD4F500A64BAE /* HomeViewController.swift in Sources */,
 				AD6A3ED321AAA1B000D22D7D /* ChatTableViewCell.swift in Sources */,
@@ -649,6 +750,7 @@
 		};
 		B725463821AA952300FE48E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95A099127C58EA3DA561B1D /* Pods-Hackathon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,6 +774,7 @@
 		};
 		B725463921AA952300FE48E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B13170621C201D7850F18BE /* Pods-Hackathon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
@@ -30,9 +31,23 @@ class LoginViewController: UIViewController {
         passwordInput.layer.borderWidth = 1
         passwordInput.layer.borderColor = AppColor.main.cgColor
         passwordInput.backgroundColor = AppColor.white
+        passwordInput.isSecureTextEntry = true
     }
     
     @IBAction func loginButton(_ sender: UIButton) {
+        guard let email = mailInput.text else { return }
+        guard let pass = passwordInput.text else { return }
+        if email.isEmpty { return }
+        if pass.isEmpty { return }
         
+        Auth.auth().signIn(withEmail: email, password: pass) { user, error in
+            if let error = error {
+                print(error)
+                return
+            } else {
+                print("ログイン成功")
+                self.performSegue(withIdentifier: "toTabBar", sender: nil)
+            }
+        }
     }
 }

@@ -42,11 +42,11 @@ class ConsultationTableViewCell: UITableViewCell {
         self.addSubview(profileLabel)
     }
     
-    func setUp() {
-        let imageURL = URL(string: "https://pbs.twimg.com/profile_images/1061520538386915329/ExNUPGbF_400x400.jpg")
+    func setUp(user: User) {
+        let imageURL = URL(string: user.imageURL)
         userImageView.sd_setImage(with: imageURL!)
-        nameLabel.text = "ともき"
-        profileLabel.text = "デザインできないiOSエンジニア。コード書くのが大好き！"
+        nameLabel.text = user.name
+        profileLabel.text = user.profile
     }
     
     override func layoutSubviews() {

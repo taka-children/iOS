@@ -26,6 +26,16 @@
             </objects>
             <point key="canvasLocation" x="1255.2" y="-171.36431784107947"/>
         </scene>
+        <!--Setting-->
+        <scene sceneID="Zn0-nl-sFx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Setting" id="5Ii-39-TMb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="h5Q-Wn-Jis"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kw-bY-6wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="-200"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rcV-YT-kmL">
             <objects>

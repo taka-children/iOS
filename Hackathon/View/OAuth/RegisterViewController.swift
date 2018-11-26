@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     
@@ -30,14 +31,34 @@ class RegisterViewController: UIViewController {
         passwordInput.layer.borderWidth = 1
         passwordInput.layer.borderColor = AppColor.main.cgColor
         passwordInput.backgroundColor = AppColor.white
+        passwordInput.isSecureTextEntry = true
     }
     
-    
-    @IBAction func registerButton(_ sender: UIButton) {
-    
-    self.performSegue(withIdentifier: "toProfile", sender: nil)
+    @IBAction func registerButton() {
+        guard let email = mailInput.text else { return }
+        guard let pass = passwordInput.text else { return }
+        if email.isEmpty { return }
+        if pass.isEmpty { return }
+        
+        Auth.auth().createUser(withEmail: email, password: pass) { user, error in
+            if let error = error {
+                print(error)
+                return
+            }
+            print("アカウント作成成功")
+            AppUser.saveEmail(email: email)
+            self.performSegue(withIdentifier: "toProfile", sender: nil)
+        }
     }
-    
+}
 
-
+extension RegisterViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == mailInput {
+            passwordInput.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
+    }
 }

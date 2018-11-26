@@ -94,7 +94,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="1vj-56-dEZ">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="e9K-WW-VmA" id="nyN-Ua-Qz7"/>
-                                <segue destination="pfU-dX-kfx" kind="show" identifier="toTabBar" id="Cwr-ni-rag"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -104,6 +103,7 @@
                         <outlet property="userIntroduceTextView" destination="RAO-KT-If6" id="V4G-JN-JRX"/>
                         <outlet property="userNameTextField" destination="DPu-b8-aNI" id="pRR-ck-WxC"/>
                         <outlet property="userSexTextField" destination="RGA-aK-W2f" id="ykS-80-yPn"/>
+                        <segue destination="pfU-dX-kfx" kind="modal" identifier="toTabBar" id="ysq-38-gbN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebi-ee-hLB" userLabel="First Responder" sceneMemberID="firstResponder"/>

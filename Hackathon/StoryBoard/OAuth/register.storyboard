@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rne-5b-NLM">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rne-5b-NLM">
                                 <rect key="frame" x="34" y="457" width="307" height="50"/>
                                 <color key="backgroundColor" red="0.46601622180000002" green="1" blue="0.96578087729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7G-fo-iF8">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b7G-fo-iF8">
                                 <rect key="frame" x="34" y="357" width="307" height="50"/>
                                 <color key="backgroundColor" red="0.46601622180000002" green="1" blue="0.96578087729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -45,8 +45,7 @@
                                 </constraints>
                                 <state key="normal" title="登録"/>
                                 <connections>
-                                    <action selector="registerButton:" destination="alF-13-niq" eventType="touchUpInside" id="Mth-Vu-haq"/>
-                                    <segue destination="wX6-1J-Fwc" kind="show" identifier="toProfile" id="es8-r3-3AX"/>
+                                    <action selector="registerButton" destination="alF-13-niq" eventType="touchUpInside" id="q9L-CP-aaG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,6 +67,7 @@
                     <connections>
                         <outlet property="mailInput" destination="b7G-fo-iF8" id="E1j-Q3-raF"/>
                         <outlet property="passwordInput" destination="Rne-5b-NLM" id="5y9-YF-Oba"/>
+                        <segue destination="wX6-1J-Fwc" kind="modal" identifier="toProfile" id="ggY-j9-hDN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRm-rE-zGl" userLabel="First Responder" sceneMemberID="firstResponder"/>

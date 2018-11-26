@@ -17,13 +17,34 @@ class TabBarController: UITabBarController {
         let viewControllers = Tab.allCases.map { $0.instantiateViewController() }
         setViewControllers(viewControllers, animated: false)
     }
+    
+    func setHelpButtonHidden(_ hidden: Bool, animated: Bool, completion: @escaping (Bool) -> Void = { _ in }) {
+        guard let navCtrl = self.viewControllers?.first as? UINavigationController, let homeVC = navCtrl.viewControllers.first as? HomeViewController else { return }
+        let helpButton = homeVC.helpButton
+        guard helpButton.isHidden != hidden else { return }
+        if animated {
+            let displayedButtonOriginY = helpButton.frame.minY
+            let hiddenButtonOriginY = self.view.bounds.maxY
+            if !hidden {
+                helpButton.isHidden = false
+                helpButton.frame.origin.y = hiddenButtonOriginY
+            }
+            UIView.animate(withDuration: 0.4, animations: {
+                helpButton.frame.origin.y = hidden ? hiddenButtonOriginY : displayedButtonOriginY
+            }, completion: { _ in
+                helpButton.isHidden = hidden
+                helpButton.frame.origin.y = displayedButtonOriginY
+            })
+        } else {
+            helpButton.isHidden = hidden
+        }
+    }
 }
 
 extension TabBarController {
     
     private enum Tab: CaseIterable {
         case home
-        case mail
         case user
         
         func instantiateViewController() -> UINavigationController {
@@ -33,9 +54,6 @@ extension TabBarController {
             case .home:
                 nav = Storyboard.home.instantiateViewController()
                 tabBarItem = UITabBarItem(title: "", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
-            case .mail:
-                nav = Storyboard.mail.instantiateViewController()
-                tabBarItem = UITabBarItem(title: "", image: UIImage(named: "mailPage"), selectedImage: UIImage(named: "mailPage"))
             case .user:
                 nav = Storyboard.user.instantiateViewController()
                 tabBarItem = UITabBarItem(title: "", image: UIImage(named: "myPage"), selectedImage: UIImage(named: "myPage"))

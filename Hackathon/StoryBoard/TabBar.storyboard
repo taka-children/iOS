@@ -21,7 +21,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="JHi-Qd-MSm" kind="relationship" relationship="viewControllers" id="8L5-tq-wlP"/>
-                        <segue destination="oAC-UH-jKd" kind="relationship" relationship="viewControllers" id="Uw6-Gk-BPO"/>
                         <segue destination="yt0-cX-0lr" kind="relationship" relationship="viewControllers" id="e0y-gQ-IqL"/>
                     </connections>
                 </tabBarController>
@@ -38,16 +37,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZB-HR-gIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1290" y="-367"/>
-        </scene>
-        <!--Consultation-->
-        <scene sceneID="WEp-8w-sJ6">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Consultation" id="oAC-UH-jKd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bgz-JK-eI8"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gQl-AG-qJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1298" y="-162"/>
         </scene>
         <!--User-->
         <scene sceneID="j4Z-Td-bIr">
@@ -66,7 +55,6 @@
                     <tabBarItem key="tabBarItem" title="Item" id="dg8-sM-aUw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AoJ-hD-28k">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
