@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController, UITextViewDelegate {
 
@@ -43,7 +44,8 @@ class ProfileViewController: UIViewController, UITextViewDelegate {
         if profile.isEmpty { return }
         if birthday.isEmpty { return }
         
-        AppUser.save(name: name, sex: sex, profile: profile, birthday: birthday)
+        postUserData(name: name, profile: profile, birthday: birthday, sex: sex)
+        AppUser.save(name: name, profile: profile, birthday: birthday, sex: sex)
         self.performSegue(withIdentifier: "toTabBar", sender: nil)
     }
     
@@ -87,6 +89,20 @@ class ProfileViewController: UIViewController, UITextViewDelegate {
         dateformatter.dateFormat = "yyyy-MM-dd"
         let strDate = dateformatter.string(from: date)
         return strDate
+    }
+    
+    /// ユーザー情報をFirebaseに保存
+    private func postUserData(name: String, profile: String, birthday: String, sex: String) {
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        let user = Auth.auth().currentUser
+        guard let uuid = user?.uid else { return }
+        ref.child("users").child(uuid).updateChildValues([
+            "name": name,
+            "profile": profile,
+            "birthday": birthday,
+            "sex": sex
+            ])
     }
     
     @IBAction private func imageButtonPressed() {

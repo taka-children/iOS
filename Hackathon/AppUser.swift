@@ -49,7 +49,7 @@ extension AppUser {
     }
     
     /// 基本情報を保存
-    static func save(name: String, sex: String, profile: String, birthday: String) {
+    static func save(name: String, profile: String, birthday: String, sex: String) {
         Defaults[.name] = name
         Defaults[.sex] = sex
         Defaults[.profile] = profile
