@@ -25,6 +25,7 @@ class ConsultationViewController: UIViewController {
         self.view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
+        observe()
     }
     
     func observe(){

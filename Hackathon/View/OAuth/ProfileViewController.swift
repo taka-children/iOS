@@ -98,6 +98,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate {
         let user = Auth.auth().currentUser
         guard let uuid = user?.uid else { return }
         ref.child("users").child(uuid).updateChildValues([
+            "UUID": uuid,
             "name": name,
             "profile": profile,
             "birthday": birthday,
