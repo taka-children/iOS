@@ -46,6 +46,7 @@ class LoginViewController: UIViewController {
                 return
             } else {
                 print("ログイン成功")
+                self.performSegue(withIdentifier: "toTabBar", sender: nil)
             }
         }
     }

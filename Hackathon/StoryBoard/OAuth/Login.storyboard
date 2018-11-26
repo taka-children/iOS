@@ -67,11 +67,22 @@
                     <connections>
                         <outlet property="mailInput" destination="YSh-3y-wxD" id="Fgv-Fh-AWr"/>
                         <outlet property="password" destination="FEy-xu-bf0" id="Gkn-uj-vSy"/>
+                        <segue destination="i2g-HP-P25" kind="modal" identifier="toTabBar" id="tfC-o2-Nbp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7w-cI-P5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1951.2" y="-96.7016491754123"/>
+        </scene>
+        <!--TabBar-->
+        <scene sceneID="Nme-c4-WZe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabBar" id="i2g-HP-P25" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OXk-M8-5Va"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2p0-Xq-2Kw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2718" y="-87"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B9h-Hb-Iat">
