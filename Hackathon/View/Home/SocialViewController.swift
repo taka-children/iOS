@@ -10,42 +10,16 @@ import UIKit
 import XLPagerTabStrip
 
 class SocialViewController: UIViewController {
-
-    private let tableView = UITableView()
+    
+    @IBOutlet private weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homeCell")
-        self.view.addSubview(tableView)
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+        let favoriteURL = URL(string: "https://news.google.com/search?q=%E7%A4%BE%E4%BC%9A&hl=ja&gl=JP&ceid=JP%3Aja")
+        let urlRequest = URLRequest(url: favoriteURL!)
         
-        tableView.snp.makeConstraints { make in
-            make.size.equalTo(self.view)
-        }
-    }
-}
-
-extension SocialViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath) as! HomeTableViewCell
-        cell.textLabel?.text = String(indexPath.row)
-        return cell
-    }
-}
-
-extension SocialViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        webView.loadRequest(urlRequest)
     }
 }
 

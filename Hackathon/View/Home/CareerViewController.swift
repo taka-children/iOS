@@ -10,42 +10,16 @@ import UIKit
 import XLPagerTabStrip
 
 class CareerViewController: UIViewController {
-
-    private let tableView = UITableView()
+    
+    @IBOutlet private weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homeCell")
-        self.view.addSubview(tableView)
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+        let favoriteURL = URL(string: "https://news.google.com/search?q=%E6%95%99%E8%82%B2&hl=ja&gl=JP&ceid=JP%3Aja")
+        let urlRequest = URLRequest(url: favoriteURL!)
         
-        tableView.snp.makeConstraints { make in
-            make.size.equalTo(self.view)
-        }
-    }
-}
-
-extension CareerViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath) as! HomeTableViewCell
-        cell.textLabel?.text = String(indexPath.row)
-        return cell
-    }
-}
-
-extension CareerViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        webView.loadRequest(urlRequest)
     }
 }
 

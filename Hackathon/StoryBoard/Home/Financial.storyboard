@@ -17,9 +17,24 @@
                     <view key="view" contentMode="scaleToFill" id="Obh-qL-hsA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVk-uE-e1O">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UVk-uE-e1O" firstAttribute="top" secondItem="AqW-0v-Bbd" secondAttribute="top" id="BUT-1b-7zo"/>
+                            <constraint firstItem="UVk-uE-e1O" firstAttribute="leading" secondItem="AqW-0v-Bbd" secondAttribute="leading" id="U0b-pZ-L5n"/>
+                            <constraint firstItem="AqW-0v-Bbd" firstAttribute="trailing" secondItem="UVk-uE-e1O" secondAttribute="trailing" id="epN-63-CHJ"/>
+                            <constraint firstItem="AqW-0v-Bbd" firstAttribute="bottom" secondItem="UVk-uE-e1O" secondAttribute="bottom" id="i51-za-Kge"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AqW-0v-Bbd"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="UVk-uE-e1O" id="ZIi-Kg-ec6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xl8-6V-2vx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

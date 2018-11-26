@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dOQ-9H-ZaP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="awd-xM-e7e">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,19 +11,34 @@
     </dependencies>
     <scenes>
         <!--Business View Controller-->
-        <scene sceneID="bMp-gu-qyE">
+        <scene sceneID="Set-Ao-k2F">
             <objects>
-                <viewController id="dOQ-9H-ZaP" customClass="BusinessViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GaS-UW-43T">
+                <viewController id="awd-xM-e7e" customClass="BusinessViewController" customModule="Hackathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e57-vv-OpT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P20-54-eko">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="XjM-XD-IK7"/>
+                        <constraints>
+                            <constraint firstItem="P20-54-eko" firstAttribute="leading" secondItem="X8G-Xf-i9h" secondAttribute="leading" id="4Ep-Oe-jfr"/>
+                            <constraint firstItem="X8G-Xf-i9h" firstAttribute="trailing" secondItem="P20-54-eko" secondAttribute="trailing" id="I14-gt-XFo"/>
+                            <constraint firstItem="P20-54-eko" firstAttribute="top" secondItem="X8G-Xf-i9h" secondAttribute="top" id="TK7-TI-yan"/>
+                            <constraint firstItem="X8G-Xf-i9h" firstAttribute="bottom" secondItem="P20-54-eko" secondAttribute="bottom" id="hCk-aK-N8y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X8G-Xf-i9h"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="P20-54-eko" id="GF2-Md-0JV"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QkP-8U-l1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HG3-Oj-fVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="-161"/>
+            <point key="canvasLocation" x="558" y="-477"/>
         </scene>
     </scenes>
 </document>

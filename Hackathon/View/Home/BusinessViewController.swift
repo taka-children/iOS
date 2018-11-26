@@ -11,41 +11,15 @@ import XLPagerTabStrip
 
 class BusinessViewController: UIViewController {
 
-    private let tableView = UITableView()
+    @IBOutlet private weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "homeCell")
-        self.view.addSubview(tableView)
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+        let favoriteURL = URL(string: "https://news.google.com/search?q=%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9&hl=ja&gl=JP&ceid=JP%3Aja")
+        let urlRequest = URLRequest(url: favoriteURL!)
         
-        tableView.snp.makeConstraints { make in
-            make.size.equalTo(self.view)
-        }
-    }
-}
-
-extension BusinessViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "homeCell", for: indexPath) as! HomeTableViewCell
-        cell.textLabel?.text = String(indexPath.row)
-        return cell
-    }
-}
-
-extension BusinessViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        webView.loadRequest(urlRequest)
     }
 }
 

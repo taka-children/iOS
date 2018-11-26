@@ -55,12 +55,12 @@
 		B7D3F4BA21AAF33000BFDEB6 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4B921AAF33000BFDEB6 /* UserViewController.swift */; };
 		B7D3F4BC21AAF62A00BFDEB6 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4BB21AAF62A00BFDEB6 /* UserView.swift */; };
 		B7D3F4BF21AAF7DB00BFDEB6 /* height.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D3F4BE21AAF7DB00BFDEB6 /* height.swift */; };
-		B7DCEA3721AB6DCB004A502C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7DCEA3621AB6DCB004A502C /* GoogleService-Info.plist */; };
 		B7DCEA3921AB940B004A502C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCEA3821AB940B004A502C /* User.swift */; };
 		B7DCEA3B21ABA500004A502C /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DCEA3A21ABA500004A502C /* Setting.storyboard */; };
 		B7DCEA3D21ABA50C004A502C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCEA3C21ABA50C004A502C /* SettingViewController.swift */; };
 		B7DCEA4021ABA64C004A502C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCEA3F21ABA64C004A502C /* SettingTableViewCell.swift */; };
 		B7DCEA4221ABAF0A004A502C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DCEA4121ABAF0A004A502C /* RxCocoa.framework */; };
+		B7DCEA4821ABD481004A502C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7DCEA4721ABD481004A502C /* GoogleService-Info.plist */; };
 		B7F3C87621AAD4E100A64BAE /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87521AAD4E100A64BAE /* StoryBoard.swift */; };
 		B7F3C87921AAD4F500A64BAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */; };
 		B7F3C87B21AAD4FF00A64BAE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87A21AAD4FF00A64BAE /* TabBarController.swift */; };
@@ -122,12 +122,12 @@
 		B7D3F4B921AAF33000BFDEB6 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		B7D3F4BB21AAF62A00BFDEB6 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		B7D3F4BE21AAF7DB00BFDEB6 /* height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = height.swift; sourceTree = "<group>"; };
-		B7DCEA3621AB6DCB004A502C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7DCEA3821AB940B004A502C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7DCEA3A21ABA500004A502C /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B7DCEA3C21ABA50C004A502C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B7DCEA3F21ABA64C004A502C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		B7DCEA4121ABAF0A004A502C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		B7DCEA4721ABD481004A502C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7F3C87521AAD4E100A64BAE /* StoryBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B7F3C87A21AAD4FF00A64BAE /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -258,7 +258,7 @@
 				B725462F21AA952300FE48E7 /* Assets.xcassets */,
 				B725463121AA952300FE48E7 /* LaunchScreen.storyboard */,
 				B725463421AA952300FE48E7 /* Info.plist */,
-				B7DCEA3621AB6DCB004A502C /* GoogleService-Info.plist */,
+				B7DCEA4721ABD481004A502C /* GoogleService-Info.plist */,
 			);
 			path = Hackathon;
 			sourceTree = "<group>";
@@ -496,9 +496,9 @@
 				AD6A3ED421AAA1B000D22D7D /* ChatTableViewCell.xib in Resources */,
 				B738A0DE21AB46AB00644C26 /* Internet.storyboard in Resources */,
 				B725463021AA952300FE48E7 /* Assets.xcassets in Resources */,
+				B7DCEA4821ABD481004A502C /* GoogleService-Info.plist in Resources */,
 				B7F3C87E21AAD56400A64BAE /* Home.storyboard in Resources */,
 				B7D3F4AC21AAE58E00BFDEB6 /* Attribute.storyboard in Resources */,
-				B7DCEA3721AB6DCB004A502C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
