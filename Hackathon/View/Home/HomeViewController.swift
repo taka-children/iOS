@@ -7,15 +7,53 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import XLPagerTabStrip
 
 class HomeViewController: ButtonBarPagerTabStripViewController {
+
+    let helpButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "mail"), for: .normal)
+        button.backgroundColor = AppColor.main
+        return button
+    }()
+    let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         setBarLayout()
         super.viewDidLoad()
         
         self.navigationItem.title = "記事"
+        setHelp()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        if let tabBarCtrl = self.tabBarController as? TabBarController {
+            tabBarCtrl.setHelpButtonHidden(false, animated: true)
+        }
+    }
+    
+    private func setHelp() {
+        let tellMeButtonOriginY = self.view.bounds.height - self.tabBarController!.tabBar.bounds.height - 95
+        let tellMeButtonWidth: CGFloat = 80
+        self.helpButton.frame = CGRect(x: self.view.bounds.width - 95,
+                                         y: tellMeButtonOriginY,
+                                         width: tellMeButtonWidth,
+                                         height: tellMeButtonWidth)
+        self.helpButton.layer.cornerRadius = tellMeButtonWidth / 2
+        self.tabBarController?.view.addSubview(self.helpButton)
+        
+        self.helpButton.rx.tap.subscribe(onNext: { _ in
+            UIView.animate(withDuration: 0.4, delay: 0.0, animations: {
+                self.helpButton.frame.origin.y += 200
+            }, completion: { _ in
+                /// LINEに遷移
+            })
+        }).disposed(by: self.disposeBag)
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

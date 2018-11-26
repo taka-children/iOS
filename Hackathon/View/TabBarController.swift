@@ -17,6 +17,28 @@ class TabBarController: UITabBarController {
         let viewControllers = Tab.allCases.map { $0.instantiateViewController() }
         setViewControllers(viewControllers, animated: false)
     }
+    
+    func setHelpButtonHidden(_ hidden: Bool, animated: Bool, completion: @escaping (Bool) -> Void = { _ in }) {
+        guard let navCtrl = self.viewControllers?.first as? UINavigationController, let homeVC = navCtrl.viewControllers.first as? HomeViewController else { return }
+        let helpButton = homeVC.helpButton
+        guard helpButton.isHidden != hidden else { return }
+        if animated {
+            let displayedButtonOriginY = helpButton.frame.minY
+            let hiddenButtonOriginY = self.view.bounds.maxY
+            if !hidden {
+                helpButton.isHidden = false
+                helpButton.frame.origin.y = hiddenButtonOriginY
+            }
+            UIView.animate(withDuration: 0.4, animations: {
+                helpButton.frame.origin.y = hidden ? hiddenButtonOriginY : displayedButtonOriginY
+            }, completion: { _ in
+                helpButton.isHidden = hidden
+                helpButton.frame.origin.y = displayedButtonOriginY
+            })
+        } else {
+            helpButton.isHidden = hidden
+        }
+    }
 }
 
 extension TabBarController {

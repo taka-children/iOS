@@ -60,6 +60,7 @@
 		B7DCEA3B21ABA500004A502C /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DCEA3A21ABA500004A502C /* Setting.storyboard */; };
 		B7DCEA3D21ABA50C004A502C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCEA3C21ABA50C004A502C /* SettingViewController.swift */; };
 		B7DCEA4021ABA64C004A502C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DCEA3F21ABA64C004A502C /* SettingTableViewCell.swift */; };
+		B7DCEA4221ABAF0A004A502C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DCEA4121ABAF0A004A502C /* RxCocoa.framework */; };
 		B7F3C87621AAD4E100A64BAE /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87521AAD4E100A64BAE /* StoryBoard.swift */; };
 		B7F3C87921AAD4F500A64BAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */; };
 		B7F3C87B21AAD4FF00A64BAE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F3C87A21AAD4FF00A64BAE /* TabBarController.swift */; };
@@ -126,6 +127,7 @@
 		B7DCEA3A21ABA500004A502C /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B7DCEA3C21ABA50C004A502C /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B7DCEA3F21ABA64C004A502C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		B7DCEA4121ABAF0A004A502C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		B7F3C87521AAD4E100A64BAE /* StoryBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		B7F3C87821AAD4F500A64BAE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B7F3C87A21AAD4FF00A64BAE /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DCEA4221ABAF0A004A502C /* RxCocoa.framework in Frameworks */,
 				B798516721AAD8BA0089D1E8 /* XLPagerTabStrip.framework in Frameworks */,
 				B798516021AAD8B90089D1E8 /* Alamofire.framework in Frameworks */,
 				B798516121AAD8B90089D1E8 /* RxSwift.framework in Frameworks */,
@@ -310,6 +313,7 @@
 		B725464021AA98B700FE48E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7DCEA4121ABAF0A004A502C /* RxCocoa.framework */,
 				B798516621AAD8BA0089D1E8 /* SlackTextViewController.framework */,
 				B798516521AAD8BA0089D1E8 /* XLPagerTabStrip.framework */,
 				B725464121AA98B700FE48E7 /* Alamofire.framework */,
@@ -565,6 +569,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			outputFileListPaths = (
 			);
