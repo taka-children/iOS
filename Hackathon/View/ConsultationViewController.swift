@@ -32,7 +32,6 @@ class ConsultationViewController: UIViewController {
     func observe(){
         ref = Database.database().reference()
         ref.child("users").observe(DataEventType.value) { (snapshot) in
-            self.users = [User]()
             for item in snapshot.children{
                 if let snap = item as? DataSnapshot{
                     let user = User(snapshot: snap)
