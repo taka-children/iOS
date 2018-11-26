@@ -41,6 +41,12 @@ struct AppUser {
     }
 }
 
+extension AppUser {
+    static func saveEmail(email: String) {
+        Defaults[.email] = email
+    }
+}
+
 private extension DefaultsKeys {
     static let email = DefaultsKey<String>("email", defaultValue: "")
     static let imageURL = DefaultsKey<String>("user_image_URL", defaultValue: "")
