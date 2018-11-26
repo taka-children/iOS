@@ -47,6 +47,13 @@ extension AppUser {
     static func saveEmail(email: String) {
         Defaults[.email] = email
     }
+    
+    static func save(name: String, sex: String, birthday: Data, profile: String) {
+        Defaults[.name] = name
+        Defaults[.sex] = sex
+        Defaults[.birthday] = birthday
+        Defaults[.profile] = profile
+    }
 }
 
 private extension DefaultsKeys {
