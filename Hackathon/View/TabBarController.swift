@@ -23,7 +23,6 @@ extension TabBarController {
     
     private enum Tab: CaseIterable {
         case home
-        case mail
         case user
         
         func instantiateViewController() -> UINavigationController {
@@ -33,9 +32,6 @@ extension TabBarController {
             case .home:
                 nav = Storyboard.home.instantiateViewController()
                 tabBarItem = UITabBarItem(title: "", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
-            case .mail:
-                nav = Storyboard.mail.instantiateViewController()
-                tabBarItem = UITabBarItem(title: "", image: UIImage(named: "mailPage"), selectedImage: UIImage(named: "mailPage"))
             case .user:
                 nav = Storyboard.user.instantiateViewController()
                 tabBarItem = UITabBarItem(title: "", image: UIImage(named: "myPage"), selectedImage: UIImage(named: "myPage"))
