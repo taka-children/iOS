@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Firebase
 import SDWebImage
 
 class ChatViewController: UIViewController {
   
     private let tableView = UITableView()
+    var ref:DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,23 @@ class ChatViewController: UIViewController {
         
         tableView.snp.makeConstraints { make in
             make.size.equalTo(self.view)
+        }
+    }
+    
+    func observe(){
+        ref = Database.database().reference()
+        
+        ref.child("users").observe(DataEventType.value) { (snapshot) in
+            for item in snapshot.children{
+                if let snap = item as? DataSnapshot{
+                    let user = User(snapshot: snap)
+                    self.users.append(user)
+                }
+            }
+            self.users.sort(by: { (pre, next) -> Bool in
+                pre.updateAt > next.updateAt
+            })
+            self.tableView.reloadData()
         }
     }
 }
