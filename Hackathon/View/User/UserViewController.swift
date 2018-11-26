@@ -21,6 +21,10 @@ class UserViewController: UIViewController {
         profileView.frame = CGRect(x: 0, y: height.topHeight, width: view.frame.width, height: height.spaceHeight)
         profileView.setUp()
         self.view.addSubview(profileView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         
         if let tabBarCtrl = self.tabBarController as? TabBarController {
             tabBarCtrl.setHelpButtonHidden(false, animated: true)

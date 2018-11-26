@@ -15,7 +15,7 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
 
     let helpButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "mail"), for: .normal)
+        button.setImage(UIImage(named: "mailPage"), for: .normal)
         button.backgroundColor = AppColor.main
         return button
     }()
@@ -29,8 +29,8 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
         setHelp()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
         
         if let tabBarCtrl = self.tabBarController as? TabBarController {
             tabBarCtrl.setHelpButtonHidden(false, animated: true)
@@ -52,6 +52,10 @@ class HomeViewController: ButtonBarPagerTabStripViewController {
                 self.helpButton.frame.origin.y += 200
             }, completion: { _ in
                 /// LINEに遷移
+                let contactURL = URL(string: "https://line.me/R/ti/p/%40czy8284g")!
+                if UIApplication.shared.canOpenURL(contactURL) {
+                    UIApplication.shared.open(contactURL)
+                }
             })
         }).disposed(by: self.disposeBag)
     }
