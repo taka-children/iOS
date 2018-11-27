@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import FirebaseDatabase
 
 struct User {
     let UUID: String
@@ -17,7 +18,7 @@ struct User {
     let sex: String
     let imageURL: String
     
-    init(snapshot:DataSnapshot) {
+    init(snapshot: DataSnapshot) {
         self.UUID = snapshot.childSnapshot(forPath: "UUID").value as! String
         self.name = snapshot.childSnapshot(forPath: "name").value as! String
         self.profile = snapshot.childSnapshot(forPath: "profile").value as! String
