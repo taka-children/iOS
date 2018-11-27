@@ -181,9 +181,13 @@
                         <constraints>
                             <constraint firstItem="Xk2-jR-rwt" firstAttribute="top" secondItem="PjJ-ci-S2k" secondAttribute="top" id="7Zf-wk-wgG"/>
                             <constraint firstItem="Xk2-jR-rwt" firstAttribute="trailing" secondItem="PjJ-ci-S2k" secondAttribute="trailing" id="Aeo-n5-Qyr"/>
+                            <constraint firstItem="Xk2-jR-rwt" firstAttribute="trailing" secondItem="PjJ-ci-S2k" secondAttribute="trailing" id="B3o-of-2pY"/>
                             <constraint firstItem="Xk2-jR-rwt" firstAttribute="bottom" secondItem="PjJ-ci-S2k" secondAttribute="bottom" id="Hlu-QZ-4M1"/>
                             <constraint firstItem="Gej-jh-Z2Q" firstAttribute="width" secondItem="h3a-fm-phm" secondAttribute="width" id="Lts-Mb-d6r"/>
+                            <constraint firstItem="Xk2-jR-rwt" firstAttribute="leading" secondItem="PjJ-ci-S2k" secondAttribute="leading" id="TVe-Lb-c1y"/>
                             <constraint firstItem="Xk2-jR-rwt" firstAttribute="leading" secondItem="PjJ-ci-S2k" secondAttribute="leading" id="csu-dP-8bc"/>
+                            <constraint firstItem="Xk2-jR-rwt" firstAttribute="top" secondItem="PjJ-ci-S2k" secondAttribute="top" id="hGF-iw-e9X"/>
+                            <constraint firstItem="Xk2-jR-rwt" firstAttribute="bottom" secondItem="PjJ-ci-S2k" secondAttribute="bottom" id="scc-Vr-pC5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PjJ-ci-S2k"/>
                     </view>
