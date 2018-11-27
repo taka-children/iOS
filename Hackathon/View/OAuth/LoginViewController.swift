@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -18,6 +19,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         navigationItem.title = "ログイン"
+        mailInput.delegate = self
+        passwordInput.delegate = self
         setLayout()
     }
     
@@ -49,5 +52,16 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "toTabBar", sender: nil)
             }
         }
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == mailInput {
+            passwordInput.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
     }
 }
