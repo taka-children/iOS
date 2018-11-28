@@ -12,7 +12,7 @@ import MessageInputBar
 
 class ChatViewController: MessagesViewController {
     
-    var messageList: [Messages] = []
+    private var messageList: [Messages] = []
     
     lazy var formatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -47,28 +47,17 @@ class ChatViewController: MessagesViewController {
     }
     
     // サンプル用に適当なメッセージ
-    func getMessages() -> [Messages] {
+    private func getMessages() -> [Messages] {
         return [
-            createMessage(text: "あ"),
-            createMessage(text: "い"),
-            createMessage(text: "う"),
-            createMessage(text: "え"),
-            createMessage(text: "お"),
-            createMessage(text: "か"),
-            createMessage(text: "き"),
-            createMessage(text: "く"),
-            createMessage(text: "け"),
-            createMessage(text: "こ"),
-            createMessage(text: "さ"),
-            createMessage(text: "し"),
-            createMessage(text: "すせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん"),
+            createmessage(text: "こんちには", sender: otherSender()),
+            createmessage(text: "こちらこそ", sender: currentSender()),
+            createmessage(text: "hogehoge\nhogehoge", sender: otherSender())
         ]
     }
     
-    func createMessage(text: String) -> Messages {
-        let attributedText = NSAttributedString(string: text, attributes: [.font: UIFont.systemFont(ofSize: 15),
-                                                                           .foregroundColor: UIColor.black])
-        return Messages(attributedText: attributedText, sender: otherSender(), messageId: UUID().uuidString, date: Date())
+    private func createmessage(text: String, sender: Sender) -> Messages {
+        let attributedText = NSAttributedString(string: text)
+        return Messages(attributedText: attributedText, sender: sender, messageId: UUID().uuidString, date: Date())
     }
     
     override func didReceiveMemoryWarning() {
@@ -182,9 +171,7 @@ extension ChatViewController: MessageInputBarDelegate {
                 messagesCollectionView.insertSections([messageList.count - 1])
                 
             } else if let text = component as? String {
-                
-                let attributedText = NSAttributedString(string: text, attributes: [.font: UIFont.systemFont(ofSize: 15),
-                                                                                   .foregroundColor: UIColor.white])
+                let attributedText = NSAttributedString(string: text)
                 let message = Messages(attributedText: attributedText, sender: currentSender(), messageId: UUID().uuidString, date: Date())
                 messageList.append(message)
                 messagesCollectionView.insertSections([messageList.count - 1])
