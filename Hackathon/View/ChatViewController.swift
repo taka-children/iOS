@@ -42,6 +42,8 @@ class ChatViewController: MessagesViewController {
         
         // メッセージ入力時に一番下までスクロール
         maintainPositionOnKeyboardFrameChanged = true // default false
+        
+        navigationItem.title = otherSender().displayName
     }
     
     // サンプル用に適当なメッセージ
