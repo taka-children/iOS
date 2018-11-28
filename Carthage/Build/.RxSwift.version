@@ -1,12 +1,12 @@
 {
   "Mac" : [
     {
-      "name" : "RxTest",
-      "hash" : "25acc4cb555a659bd31ab6095485acfa7ddac2703a847bcfb88275121c35e1a6"
-    },
-    {
       "name" : "RxAtomic",
       "hash" : "5b77927561fd239d838382cf9e3e85c965059dc5c76decff8bf5a0021d200425"
+    },
+    {
+      "name" : "RxTest",
+      "hash" : "25acc4cb555a659bd31ab6095485acfa7ddac2703a847bcfb88275121c35e1a6"
     },
     {
       "name" : "RxBlocking",
@@ -41,12 +41,12 @@
   ],
   "tvOS" : [
     {
-      "name" : "RxAtomic",
-      "hash" : "51796723c9ca190cfe5c351258dc0df651a3d78dffa76f904873eea78c43fa3f"
-    },
-    {
       "name" : "RxTest",
       "hash" : "7633047a22aeb6028714df275f133c331fa7fe7c05b683018aee565cc764f37f"
+    },
+    {
+      "name" : "RxAtomic",
+      "hash" : "51796723c9ca190cfe5c351258dc0df651a3d78dffa76f904873eea78c43fa3f"
     },
     {
       "name" : "RxBlocking",
@@ -64,16 +64,16 @@
   "commitish" : "4.4.0",
   "iOS" : [
     {
-      "name" : "RxAtomic",
-      "hash" : "fb37241131938731431503509825100a2d14f8cdabc4eb9e5c1472de31bb6953"
-    },
-    {
       "name" : "RxBlocking",
       "hash" : "a5b86fff134fae9c75896d64d1d481f6b46da515073e62198e7377bb8a0d2b0d"
     },
     {
       "name" : "RxTest",
       "hash" : "664ca52024b36893fe00ec0f7171750b73a67afa0954f987170bc86249e4b6c6"
+    },
+    {
+      "name" : "RxAtomic",
+      "hash" : "fb37241131938731431503509825100a2d14f8cdabc4eb9e5c1472de31bb6953"
     },
     {
       "name" : "RxCocoa",
