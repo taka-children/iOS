@@ -1,0 +1,9 @@
+{
+  "commitish" : "0.4.0",
+  "iOS" : [
+    {
+      "name" : "MessageInputBar",
+      "hash" : "d86e635f1364b363fc47b8bac554c6efadb8a7fc782284ddd669b6cb0bb21506"
+    }
+  ]
+}
